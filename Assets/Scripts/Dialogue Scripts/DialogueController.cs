@@ -2,24 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class DialogueController : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI npcNameText;
     [SerializeField] private TextMeshProUGUI npcDialogueText;
+    [SerializeField] private Image npcPortrait;
 
     private SoundManager soundManager;
 
     public Queue<string> paragraphs = new Queue<string>();
-    private Queue<string> names = new Queue<string>();
+    public Queue<string> names = new Queue<string>();
+    public Queue<Sprite> sprites = new Queue<Sprite>();
 
     public bool conversationEnded;
     private string n;
     private string p;
+    private Sprite i;
 
     public void Awake()
     {
-        soundManager = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<SoundManager>();
+        //soundManager = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<SoundManager>();
     }
 
     public void displayNextParagraph(DialogueText dialogueText)
@@ -31,19 +35,16 @@ public class DialogueController : MonoBehaviour
             {
                 StartConversation(dialogueText);
             }
-            else
-            {
-                EndConversation();
-                return;
-            }
         }
 
 
         n = names.Dequeue();
         p = paragraphs.Dequeue();
-        soundManager.PlaySoundClip(3);
+        i = sprites.Dequeue();
+        //soundManager.PlaySoundClip(3);
         npcNameText.text = n;
         npcDialogueText.text = p;
+        npcPortrait.sprite = i;
 
         if (paragraphs.Count == 0)
         {
@@ -65,6 +66,10 @@ public class DialogueController : MonoBehaviour
         {
             names.Enqueue(dialogueText.speakerNames[i]);
         }
+        for (int i = 0; i < dialogueText.speakerImages.Length; i++)
+        {
+            sprites.Enqueue(dialogueText.speakerImages[i]);
+        }
     }
 
     public void EndConversation()
@@ -74,7 +79,7 @@ public class DialogueController : MonoBehaviour
         conversationEnded = false;
         if (gameObject.activeSelf)
         {
-            soundManager.PlaySoundClip(4);
+            //soundManager.PlaySoundClip(4);
             gameObject.SetActive(false);
         }
     }

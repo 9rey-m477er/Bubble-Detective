@@ -18,7 +18,15 @@ MonoBehaviour:
   - Seeker
   - Weaker
   paragraphs:
-  - Blahblahblahblahblahblah
-  - 
-  - 
-  - 
+  - 'Blahblahblahblahblahblah
+
+    Blahblahblahblahblahblah'
+  - I'm saying stuff for the sake of saying stuff for the sake of saying stuff for
+    the sake of saying stuff for the sake of saying stuff for...
+  - I'm here too! Hi!
+  - Words.
+  speakerImages:
+  - {fileID: 4878911623737468285, guid: 31a4dc14f5ebfc144bf26e1564e76f09, type: 3}
+  - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
+  - {fileID: 7924345146234068265, guid: 4422568c6b001e54e9c861cc1ddedfe5, type: 3}
+  - {fileID: -8486068878361651692, guid: 0ceaffd2568621a488bb190b993a78c2, type: 3}
