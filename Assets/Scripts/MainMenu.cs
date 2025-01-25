@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,6 +11,11 @@ public class MainMenu : MonoBehaviour
     public Image fadeImage;
     public float fadeDuration = .75f;
 
+    public TextMeshProUGUI creditsText;
+    public TextMeshProUGUI sourcesText;
+
+    public TextMeshProUGUI creditsButtonText;
+
     void Start()
     {
         Screen.SetResolution(1280, 720, true);
@@ -19,6 +25,18 @@ public class MainMenu : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void sourcesHandler()
+    {
+        if(creditsButtonText.text == "SOURCES")
+        {
+            StartCoroutine(sourcesFadeIn());
+        }
+        else if(creditsButtonText.text == "CREDITS")
+        {
+            StartCoroutine(sourcesFadeOut());
+        }
     }
 
     public void goToCredits()
@@ -59,6 +77,29 @@ public class MainMenu : MonoBehaviour
         yield return StartCoroutine(Fade(0));
         fadeImage.gameObject.SetActive(false);
 
+    }
+
+    public IEnumerator sourcesFadeIn()
+    {
+        fadeImage.gameObject.SetActive(true);
+        yield return StartCoroutine(Fade(1));
+        creditsButtonText.text = "CREDITS";
+        creditsText.gameObject.SetActive(false);
+        sourcesText.gameObject.SetActive(true);
+        yield return StartCoroutine(Fade(0));
+        fadeImage.gameObject.SetActive(false);
+    }
+
+
+    public IEnumerator sourcesFadeOut()
+    {
+        fadeImage.gameObject.SetActive(true);
+        yield return StartCoroutine(Fade(1));
+        creditsButtonText.text = "SOURCES";
+        creditsText.gameObject.SetActive(true);
+        sourcesText.gameObject.SetActive(false);
+        yield return StartCoroutine(Fade(0));
+        fadeImage.gameObject.SetActive(false);
     }
 
     private IEnumerator Fade(float targetAlpha)
