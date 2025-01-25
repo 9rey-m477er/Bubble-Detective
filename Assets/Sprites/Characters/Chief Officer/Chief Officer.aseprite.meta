@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 97ade31a08dc79f45af2f19ca881d1b0
+guid: 31a4dc14f5ebfc144bf26e1564e76f09
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -95,7 +95,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 0
+  platformSettingsDirtyTick: 638734275030372369
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -119,7 +119,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: GrayscaleButton
+  - name: Chief Officer
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -128,9 +128,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 32
-      height: 16
-    spriteID: bf52925100a1e394ba1c6965b18fd0be
+      width: 36
+      height: 45
+    spriteID: 22a1280e86601a347812dc80f57c3d7c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -142,23 +142,59 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -819209609
-    name: GrayscaleButton
+    guid: -1849182241
+    name: Chief Officer
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: GrayscaleButton
+    - name: Chief Officer
       frameIndex: 0
       cellRect:
-        x: 0
+        x: 6
         y: 0
-        width: 32
-        height: 16
-      spriteId: bf52925100a1e394ba1c6965b18fd0be
+        width: 36
+        height: 45
+      spriteId: 22a1280e86601a347812dc80f57c3d7c
     linkedCells: []
     parentIndex: -1
-  platformSettings: []
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Server
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 32, y: 16}
+  canvasSize: {x: 48, y: 48}

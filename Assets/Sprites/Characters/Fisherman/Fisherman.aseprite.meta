@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7e3e194b9f75da74fad56a621909df22
+guid: 4422568c6b001e54e9c861cc1ddedfe5
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -95,7 +95,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 0
+  platformSettingsDirtyTick: 638734275219825474
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -119,18 +119,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Textbox
+  - name: Fisherman
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.36734694, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 128
-      height: 24
-    spriteID: 8e91c28784f7c8e42aa7e4318ac426b6
+      width: 49
+      height: 69
+    spriteID: 109f687cca5d34548b02ed2fd60637fd
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -142,23 +142,59 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 1691560018
-    name: Textbox
+    guid: 1603515605
+    name: Fisherman
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Textbox
+    - name: Fisherman
       frameIndex: 0
       cellRect:
-        x: 0
+        x: 14
         y: 0
-        width: 128
-        height: 24
-      spriteId: 8e91c28784f7c8e42aa7e4318ac426b6
+        width: 49
+        height: 69
+      spriteId: 109f687cca5d34548b02ed2fd60637fd
     linkedCells: []
     parentIndex: -1
-  platformSettings: []
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Server
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 128, y: 72}
+  canvasSize: {x: 64, y: 76}
