@@ -481,7 +481,7 @@ GameObject:
   - component: {fileID: 240993121}
   - component: {fileID: 240993120}
   m_Layer: 5
-  m_Name: CopSprite
+  m_Name: LeftSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -963,6 +963,7 @@ GameObject:
   - component: {fileID: 405507589}
   - component: {fileID: 405507588}
   - component: {fileID: 405507592}
+  - component: {fileID: 405507593}
   m_Layer: 5
   m_Name: TitleCanvas
   m_TagString: Untagged
@@ -1075,6 +1076,33 @@ MonoBehaviour:
   creditsText: {fileID: 903883631}
   sourcesText: {fileID: 1864699247}
   creditsButtonText: {fileID: 1707294687}
+--- !u!114 &405507593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 405507587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 357cafa6b6e8bf349a8ae440a7073a0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftSprite: {fileID: 240993120}
+  rightSprite: {fileID: 1085897828}
+  fadeDuration: 1.5
+  leftImages:
+  - {fileID: 1427575840990723373, guid: 93a0c1e448a707a40a1dfd4614474229, type: 3}
+  - {fileID: -2464623677970950858, guid: 55da0c6acb5620a488516e924488711f, type: 3}
+  - {fileID: 1583726850231400584, guid: b9793e5175658c74a9b9b7a2a4aa2e48, type: 3}
+  - {fileID: 4878911623737468285, guid: 31a4dc14f5ebfc144bf26e1564e76f09, type: 3}
+  - {fileID: -6956087720970070490, guid: 0f7c0eb09de6f1e449546f067221deb5, type: 3}
+  rightImages:
+  - {fileID: 4878911623737468285, guid: 31a4dc14f5ebfc144bf26e1564e76f09, type: 3}
+  - {fileID: -6956087720970070490, guid: 0f7c0eb09de6f1e449546f067221deb5, type: 3}
+  - {fileID: 1427575840990723373, guid: 93a0c1e448a707a40a1dfd4614474229, type: 3}
+  - {fileID: -2464623677970950858, guid: 55da0c6acb5620a488516e924488711f, type: 3}
+  - {fileID: 1583726850231400584, guid: b9793e5175658c74a9b9b7a2a4aa2e48, type: 3}
 --- !u!1 &502351589
 GameObject:
   m_ObjectHideFlags: 0
@@ -2295,7 +2323,7 @@ GameObject:
   - component: {fileID: 1085897829}
   - component: {fileID: 1085897828}
   m_Layer: 5
-  m_Name: FisherSprite
+  m_Name: RightSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2317,8 +2345,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 324.3, y: -111.4}
-  m_SizeDelta: {x: 245, y: 345}
+  m_AnchoredPosition: {x: 307, y: -167}
+  m_SizeDelta: {x: 180, y: 225}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1085897828
 MonoBehaviour:
@@ -2340,7 +2368,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 7924345146234068265, guid: 4422568c6b001e54e9c861cc1ddedfe5, type: 3}
+  m_Sprite: {fileID: 1427575840990723373, guid: 93a0c1e448a707a40a1dfd4614474229, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

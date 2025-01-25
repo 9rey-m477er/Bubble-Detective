@@ -22,6 +22,9 @@ public class LocationManager : MonoBehaviour
             currentDialogue++;
             DialogueController.displayNextParagraph(locationObjects[currentLocation].dialogues[currentDialogue]);
         }
-        
+        if(LocationObject.dialogues.Count == currentDialogue)
+        {
+
+        }
     }
 }
