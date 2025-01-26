@@ -12,8 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c42d4f2e835f6874bba65344be3e888e, type: 3}
   m_Name: "004 \u2013 vic house chats"
   m_EditorClassIdentifier: 
-  dialogues: []
+  dialogues:
+  - {fileID: 11400000, guid: 49549d1d865f2e24989b11edde60a13f, type: 2}
+  - {fileID: 11400000, guid: ee6eeef4c4a54604ca834fcd9cd24fdf, type: 2}
+  - {fileID: 11400000, guid: 010d1ab5e36038242b54fa136379b292, type: 2}
   background: {fileID: 21300000, guid: ef6230ded585b42438c78353e681df74, type: 3}
   nextLocation: {fileID: 11400000, guid: 5c11d971a898749439281228ad6e8f70, type: 2}
   isInvest: 0
   isQuest: 0
+  isMusicChanging: 0
+  newMusic: {fileID: 0}

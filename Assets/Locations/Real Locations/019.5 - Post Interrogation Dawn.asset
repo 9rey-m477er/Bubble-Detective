@@ -10,12 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c42d4f2e835f6874bba65344be3e888e, type: 3}
-  m_Name: "003 \u2013 black screen drive"
+  m_Name: 019.5 - Post Interrogation Dawn
   m_EditorClassIdentifier: 
-  dialogues:
-  - {fileID: 11400000, guid: d3b15000a39c99449ba37b6a3b6932ff, type: 2}
-  background: {fileID: 21300000, guid: 52fd7f8068771b246a2130a9d426a15f, type: 3}
-  nextLocation: {fileID: 11400000, guid: b14b69a9ce0aa17499f1c0b4d1059124, type: 2}
+  dialogues: []
+  background: {fileID: 0}
+  nextLocation: {fileID: 0}
   isInvest: 0
   isQuest: 0
   isMusicChanging: 0
