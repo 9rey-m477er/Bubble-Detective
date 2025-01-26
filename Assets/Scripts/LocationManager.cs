@@ -21,6 +21,8 @@ public class LocationManager : MonoBehaviour
     public SoundManager soundManager;
     public LocationObject[] locations;
     public ClickHandler clickHandler;
+    public EndingButtons endingButtons;
+    public bool selectingCulprit = false;
     private bool dialoguesFinished = false;
     private bool isDialogueOpen = false;
     private bool hasEpilogueStarted = false;
@@ -34,7 +36,7 @@ public class LocationManager : MonoBehaviour
     public AudioSource Interrogation3;
 
 
-    public GameObject questionSpace, testQ, fishQ, rivalQ, chefQ, spouse1Q, spouse2Q, chefFQ, fishFQ, houseEv, chefEv;
+    public GameObject questionSpace, testQ, fishQ, rivalQ, chefQ, spouse1Q, spouse2Q, chefFQ, fishFQ, houseEv, chefEv, epilogue;
 
     //HouseInvest
     public bool missKnife, body, beer, hook, jacket;
@@ -83,7 +85,7 @@ public class LocationManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            if (!l.isInvest && !l.isQuest)
+            if (!l.isInvest && !l.isQuest && !selectingCulprit)
             {
                 if (isDialogueOpen)
                 {
@@ -102,13 +104,8 @@ public class LocationManager : MonoBehaviour
         advanceLocation();
     }
 
-    private void advanceLocation()
+    public void advanceLocation()
     {
-        /*if (l.isMusicChanging == true)
-        {
-            updateMusic();
-        }*/
-
         if (locationObjects.Count == 0)
         {
             endGame();
@@ -116,6 +113,11 @@ public class LocationManager : MonoBehaviour
         }
 
         l = locationObjects.Dequeue();
+
+        if (l.isMusicChanging == true)
+        {
+            updateMusic();
+        }
         if (l.isInvest)
         {
             Debug.Log("is invest");
@@ -198,18 +200,31 @@ public class LocationManager : MonoBehaviour
 
     public void addEndgameToQueue(LocationObject location)
     {
-        locationObjects.Enqueue(location);
-        advanceLocation();
+        if (locationObjects.Count == 0)
+        {
+            locationObjects.Enqueue(location);
+            Debug.Log(locationObjects.ToString());
+        }
     }
 
     private void endGame()
     {
+        dialogueController.EndConversation();
+        Debug.Log("Game Ended");
         if (!hasEpilogueStarted)
         {
+            dialogues.Clear();
+            locationObjects.Clear();
+            Debug.Log("Epilogue Started");
             hasEpilogueStarted = true;
-
+            selectingCulprit = true;
+            epilogue.SetActive(true);
         }
-        SceneManager.LoadScene("Build");
+        else if (hasEpilogueStarted && locationObjects.Count == 0)
+        {
+            Debug.Log("Resetting");
+            SceneManager.LoadScene("Build");
+        }
     }
 
     private void loadQuestionRoom(LocationObject location)
@@ -495,17 +510,23 @@ public class LocationManager : MonoBehaviour
             fadeMusicOut(Interview2);
             fadeMusicIn(Interrogation3);
         }
+        if(l.currentTrack == 4)
+        {
+            fadeMusicOut(DetectiveTheme1);
+            fadeMusicOut(Interview2);
+            fadeMusicOut(Interrogation3);
+        }
     }
 
 
     public void fadeMusicOut(AudioSource audioSource)
     {
-        StartCoroutine(soundManager.FadeInMusic(audioSource));
+        StartCoroutine(soundManager.FadeOutMusic(audioSource));
     }
 
     public void fadeMusicIn(AudioSource audioSource)
     {
-        StartCoroutine(soundManager.FadeOutMusic(audioSource));
+        StartCoroutine(soundManager.FadeInMusic(audioSource));
     }
 
 }

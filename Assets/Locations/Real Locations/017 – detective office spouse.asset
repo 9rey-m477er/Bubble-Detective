@@ -17,3 +17,6 @@ MonoBehaviour:
   nextLocation: {fileID: 11400000, guid: 97d054be302b9b041af7b96977b2315e, type: 2}
   isInvest: 0
   isQuest: 1
+  isMusicChanging: 1
+  newMusic: {fileID: 0}
+  currentTrack: 0

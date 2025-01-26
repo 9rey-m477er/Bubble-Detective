@@ -15,7 +15,9 @@ MonoBehaviour:
   dialogues:
   - {fileID: 11400000, guid: b1bfc2a5cce35b5479862b5f04279f3c, type: 2}
   - {fileID: 11400000, guid: 0ba18462d29e8a547a1d82a84aeba2fa, type: 2}
-  background: {fileID: 21300000, guid: 63b41e4633d91064eb52b55b46bdd7da, type: 3}
+  background: {fileID: 21300000, guid: 52fd7f8068771b246a2130a9d426a15f, type: 3}
   nextLocation: {fileID: 0}
   isInvest: 0
   isQuest: 0
+  isMusicChanging: 0
+  newMusic: {fileID: 0}

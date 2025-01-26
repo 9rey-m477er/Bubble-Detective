@@ -10,8 +10,8 @@ public class EndingButtons : MonoBehaviour
     public LocationManager LocationManager;
     public LocationObject goodEnding, badEnding;
     private LocationObject chosenEnding;
-    public GameObject goodAssets;
-    public GameObject badAssets;
+    public Image background, textbox;
+    public Sprite theChair, nothing;
     public GameObject buttons;
     public Image fadeImage;
     public float fadeDuration = .75f;
@@ -21,25 +21,23 @@ public class EndingButtons : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        badAssets.SetActive(false);
-        goodAssets.SetActive(false);
+        fadeImage.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(executionDone == true)
+        if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            if (Input.GetKeyDown(KeyCode.Mouse0))
+            Debug.Log("Click!");
+            if (executionDone == true)
             {
-                continue1 = true;
+                executionDone = false;
+                LocationManager.selectingCulprit = false;
+                LocationManager.advanceLocation();
             }
         }
 
-        if(continue1 == true)
-        {
-            LocationManager.addEndgameToQueue(chosenEnding);
-        }
     }
 
     public void addButtons() //pop up ending buttons
@@ -49,13 +47,17 @@ public class EndingButtons : MonoBehaviour
 
     public void badOption()
     {
+        Debug.Log("Clicked Bad");
         chosenEnding = badEnding;
+        LocationManager.addEndgameToQueue(chosenEnding);
         StartCoroutine(fadeBad());
     }
 
     public void goodOption()
     {
+        Debug.Log("Clicked Good");
         chosenEnding = goodEnding;
+        LocationManager.addEndgameToQueue(chosenEnding);
         StartCoroutine(fadeGood());
     }
 
@@ -66,8 +68,8 @@ public class EndingButtons : MonoBehaviour
         fadeImage.gameObject.SetActive(true);
         yield return StartCoroutine(Fade(1));
 
-        goodAssets.SetActive(true);
-        badAssets.SetActive(false);
+        background.sprite = theChair;
+        textbox.sprite = nothing;
         buttons.SetActive(false);
 
         yield return StartCoroutine(Fade(0));
@@ -81,8 +83,8 @@ public class EndingButtons : MonoBehaviour
         fadeImage.gameObject.SetActive(true);
         yield return StartCoroutine(Fade(1));
 
-        badAssets.SetActive(true);
-        goodAssets.SetActive(false);
+        background.sprite = theChair;
+        textbox.sprite = nothing;
         buttons.SetActive(false);
 
         yield return StartCoroutine(Fade(0));
