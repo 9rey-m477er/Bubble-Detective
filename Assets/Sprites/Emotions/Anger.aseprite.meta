@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4422568c6b001e54e9c861cc1ddedfe5
+guid: 1a64e5cbf50cbe240b861b1a9a6f4565
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -119,18 +119,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Fisherman
+  - name: Anger
     originalName: 
-    pivot: {x: 0.36734694, y: 0}
+    pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 49
-      height: 69
-    spriteID: 109f687cca5d34548b02ed2fd60637fd
+      width: 5
+      height: 5
+    spriteID: d5c3bbe40ee3aaf4f932eb9289dbfd26
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -142,23 +142,23 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 1603515605
-    name: Fisherman
+    guid: 62930539
+    name: Anger
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Fisherman
+    - name: Anger
       frameIndex: 0
       cellRect:
-        x: 14
+        x: 0
         y: 0
-        width: 49
-        height: 69
-      spriteId: 109f687cca5d34548b02ed2fd60637fd
+        width: 5
+        height: 5
+      spriteId: d5c3bbe40ee3aaf4f932eb9289dbfd26
     linkedCells: []
     parentIndex: -1
   platformSettings: []
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 64, y: 76}
+  canvasSize: {x: 5, y: 5}
