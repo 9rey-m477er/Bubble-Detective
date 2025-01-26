@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using Unity.VisualScripting;
 using UnityEditor.Rendering;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using static UnityEditor.FilePathAttribute;
 
@@ -17,20 +19,19 @@ public class LocationManager : MonoBehaviour
     public bool dialoguesFinished = false;
     public bool isDialogueOpen = false;
 
+    public GameObject menuCanvas;
+    public GameObject gameCanvas;
+
     public LocationObject l;
     public DialogueText t;
 
     public Queue<LocationObject> locationObjects = new Queue<LocationObject>();
     public Queue<DialogueText> dialogues = new Queue<DialogueText>();
-    void Start()
-    {
-        for (int i=0; i<locations.Length; i++)
-        {
-            locationObjects.Enqueue(locations[i]);
-        }
-        advanceLocation();
-    }
 
+    private void Start()
+    {
+        gameStart();
+    }
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Mouse0))
@@ -42,8 +43,24 @@ public class LocationManager : MonoBehaviour
         }
     }
 
+    public void gameStart()
+    {
+        for (int i = 0; i < locations.Length; i++)
+        {
+            locationObjects.Enqueue(locations[i]);
+        }
+        advanceLocation();
+    }
+
     private void advanceLocation()
     {
+
+        if (locationObjects.Count == 0)
+        {
+            endGame();
+            return;
+        }
+
         l = locationObjects.Dequeue();
         if (l.isInvest)
         {
@@ -65,6 +82,7 @@ public class LocationManager : MonoBehaviour
         for (int i = 0; i < location.dialogues.Length; i++)
         {
             dialogues.Enqueue(location.dialogues[i]);
+            Debug.Log("Enqueued " +  location.dialogues[i].name + "for Location " + location.name);
         }        
     }
 
@@ -76,10 +94,19 @@ public class LocationManager : MonoBehaviour
             {
                 loadDialogues(location);
             }
+            else
+            {
+                dialoguesFinished = false;
+                advanceLocation();
+                return;
+            }
         }
-
-        t = dialogues.Dequeue();
-        advanceDialogue(t);
+        if (dialogues.Count > 0)
+        {
+            t = dialogues.Dequeue();
+            Debug.Log("Dequeued " + t.name);
+            advanceDialogue(t);
+        }
 
         if (dialogues.Count == 0)
         {
@@ -97,11 +124,17 @@ public class LocationManager : MonoBehaviour
         }
         if (dialogueController.conversationEnded)
         {
+            dialogueController.conversationEnded = false;
             loadNextDialogue(l);
         }
         else
         {
             dialogueController.displayNextParagraph(text);
         }
+    }
+
+    private void endGame()
+    {
+        SceneManager.LoadScene("Build");
     }
 }
