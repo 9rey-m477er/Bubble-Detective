@@ -8,6 +8,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.Timeline;
 using UnityEngine.UI;
+using static UnityEditor.FilePathAttribute;
 //using static UnityEditor.FilePathAttribute;
 
 public class LocationManager : MonoBehaviour
@@ -57,7 +58,7 @@ public class LocationManager : MonoBehaviour
     private bool spouse1Q1, spouse1Q2, spouse1Q3;
 
     //SpouseInter2
-    private bool spouse2Q1, spouse2Q2, spouse2Q3, spouse2Q4, spouse2Q5;
+    private bool spouse2Q1, spouse2Q2;
 
     //chefFinalInter
     private bool chefFQ1, chefFQ2, chefFQ3, chefFQ4;
@@ -103,10 +104,10 @@ public class LocationManager : MonoBehaviour
 
     private void advanceLocation()
     {
-        if (l.isMusicChanging == true)
+        /*if (l.isMusicChanging == true)
         {
             updateMusic();
-        }
+        }*/
 
         if (locationObjects.Count == 0)
         {
@@ -221,26 +222,38 @@ public class LocationManager : MonoBehaviour
             case "TestInter1":
                 testQ.SetActive(true);
                 break;
-            case "008 - int room fisher":
+            case "008 int room fisher":
+                Debug.Log("008");
                 fishQ.SetActive(true);
                 break;
-            case "010 - detectives office rival chef":
+            case "010 detectives office rival chef":
                 rivalQ.SetActive(true);
+                fishQ.SetActive(false);
                 break;
-            case "015 - int room chef":
+            case "015 int room chef":
                 chefQ.SetActive(true);
+                rivalQ.SetActive(false);
                 break;
             case "017 - detective office spouse":
+                Debug.Log("works");
                 spouse1Q.SetActive(true);
+                chefQ.SetActive(false);
                 break;
-            case "019 - int room spouse":
+            case "019 – int room spouse":
+                Debug.Log("works");
                 spouse2Q.SetActive(true);
+                spouse1Q.SetActive(false);
                 break;
-            case "023 - int room chef":
+            case "023 – int room chef":
                 chefFQ.SetActive(true);
+                spouse2Q.SetActive(false);
                 break;
-            case "024 - int room fisherman":
+            case "024 – int room fisherman":
                 fishFQ.SetActive(true);
+                chefFQ.SetActive(false);
+                break;
+            default:
+                Debug.Log(location.name);
                 break;
         }
     }
@@ -334,47 +347,50 @@ public class LocationManager : MonoBehaviour
                 }
                 break;
 
-            case "008 - int room fisher":
+            case "008 int room fisher":
                 if(fishQ1 && fishQ2 && fishQ3 && fishQ4 && fishQ5)
                 {
                     ContinueButton.gameObject.SetActive(true);
                 }
                 break;
-            case "010 - detectives office rival chef":
+            case "010 detectives office rival chef":
                 if (rivalQ1 && rivalQ2 && rivalQ3 && rivalQ4)
                 {
                     ContinueButton.gameObject.SetActive(true);
                 }
                 break;
-            case "015 - int room chef":
+            case "015 int room chef":
                 if (chefQ1 && chefQ2 && chefQ3 && chefQ4)
                 {
                     ContinueButton.gameObject.SetActive(true);
                 }
                 break;
-            case "017 - detective office spouse":
+            case "017 – detective office spouse":
                 if (spouse1Q1 && spouse1Q2 && spouse1Q3)
                 {
                     ContinueButton.gameObject.SetActive(true);
                 }
                 break;
-            case "019 - int room spouse":
+            case "019 – int room spouse":
                 if (spouse2Q1 && spouse2Q2)
                 {
                     ContinueButton.gameObject.SetActive(true);
                 }
                 break;
-            case "023 - int room chef":
+            case "023 – int room chef":
                 if (chefFQ1)
                 {
                     ContinueButton.gameObject.SetActive(true);
                 }
                 break;
-            case "024 - int room fisherman":
+            case "024 – int room fisherman":
                 if (fishFQ1)
                 {
                     ContinueButton.gameObject.SetActive(true);
                 }
+                break;
+            default:
+                Debug.Log("l.name" + l.name);
                 break;
         }
     }

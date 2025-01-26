@@ -31,7 +31,7 @@ public class ClickHandler : MonoBehaviour
     //-----------------------------------------------------------
     public void OnDialogueClickQuestion(DialogueText text) //questioning
     {
-        Debug.Log("Location is " + location.name);
+        Debug.Log("Location is " + location.name + isQuestionOpen);
         if (!isQuestionOpen)
         {
             questionSpace.SetActive(false);
