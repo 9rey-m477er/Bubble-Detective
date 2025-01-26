@@ -13998,7 +13998,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.23, y: -25}
+  m_AnchoredPosition: {x: -2.23, y: -18}
   m_SizeDelta: {x: 507.07, y: 359.33}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1864699246
@@ -14029,12 +14029,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "SOURCES:\n\nSFX:\r\nHorror Stinger 12.wav by F.M.Audio -- https://freesound.org/s/614717/\r\n--
-    License: Attribution 4.0\r\n\r\nHorror Stinger 4.wav by F.M.Audio -- https://freesound.org/s/614716/\r\n--
+  m_text: "SOURCES:\nSFX:\r\n\nHorror Stinger 12.wav and Horror Stinger 4.wav by
+    F.M.Audio -- https://freesound.org/s/614717/ --https://freesound.org/s/614716\n--
     License: Attribution 4.0\n\nphone cordless ring roomy clean.flac by kyles\r\n--
     https://freesound.org/s/637749/ -- License: Creative Commons 0\r\n\r\nBubblePop
     SFX by sarooptech --\nhttps://freesound.org/s/718438/ -- License: Creative\r\n   
-    Commons 0\n\nColor Schemes:\r\nColormagic.app\r\n\nFish Image:\r\nFreepik - mrsiraphol\n\nBugfixing:\r\nChatGPT"
+    Commons 0\n\nColor Schemes:\r\nColormagic.app\r\n\nFish Image:\r\nFreepik - mrsiraphol\n\nImportant
+    Image:\nThe0ddsAreAgainstMe - Reddit\n\nBugfixing:\r\nChatGPT"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e7866a88466ee394a942f1c4b5ff1715, type: 2}
   m_sharedMaterial: {fileID: -4211338211045025501, guid: e7866a88466ee394a942f1c4b5ff1715, type: 2}
