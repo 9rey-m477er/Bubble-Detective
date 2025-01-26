@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5813f23d117dc84db6d93450b04c609, type: 3}
+  m_Name: Chief Phone Call
+  m_EditorClassIdentifier: 
+  speakerNames:
+  - Sol. Vedit
+  - B. Urst
+  - B. Urst
+  - Sol. Vedit
+  - B. Urst
+  - Sol. Vedit
+  - B. Urst
+  paragraphs:
+  - Chief.
+  - Sol. Vedit.
+  - I have another case for you. Hurry up and get down here.
+  - Looks like I'm gonna have to pop another case wide open.
+  - ...
+  - Chief?
+  - Just get down here!
+  speakerImages:
+  - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
+  - {fileID: 4878911623737468285, guid: 31a4dc14f5ebfc144bf26e1564e76f09, type: 3}
+  - {fileID: 4878911623737468285, guid: 31a4dc14f5ebfc144bf26e1564e76f09, type: 3}
+  - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
+  - {fileID: 4878911623737468285, guid: 31a4dc14f5ebfc144bf26e1564e76f09, type: 3}
+  - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
+  - {fileID: 4878911623737468285, guid: 31a4dc14f5ebfc144bf26e1564e76f09, type: 3}
