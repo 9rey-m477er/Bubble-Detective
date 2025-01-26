@@ -16,8 +16,35 @@ public class LocationManager : MonoBehaviour
     public Image wideBackground;
     public DialogueController dialogueController;
     public LocationObject[] locations;
-    public bool dialoguesFinished = false;
-    public bool isDialogueOpen = false;
+    private bool dialoguesFinished = false;
+    private bool isDialogueOpen = false;
+
+    //HouseInvest
+    private bool missKnife, body, beer, hook, jacket;
+
+    //ChefInvest
+    private bool foundKnife, dart, picture;
+
+    //FishInter
+    private bool fishQ1, fishQ2, fishQ3, fishQ4, fishQ5;
+
+    //RivalInter
+    private bool rivalQ1, rivalQ2, rivalQ3, rivalQ4;
+
+    //ChefInter
+    private bool chefQ1, chefQ2, chefQ3, chefQ4;
+
+    //SpouseInter1
+    private bool spouse1Q1, spouse1Q2, spouse1Q3;
+
+    //SpouseInter2
+    private bool spouse2Q1, spouse2Q2, spouse2Q3, spouse2Q4, spouse2Q5;
+
+    //chefFinalInter
+    private bool chefFQ1, chefFQ2, chefFQ3, chefFQ4;
+
+    //fishFinalInter
+    private bool fishFQ1, fishFQ2, fishFQ3, fishFQ4;
 
     public GameObject menuCanvas;
     public GameObject gameCanvas;
@@ -67,14 +94,22 @@ public class LocationManager : MonoBehaviour
             wideBackground.gameObject.SetActive(true);
             narrowBackground.gameObject.SetActive(false);
             wideBackground.sprite = l.background;
+            loadInvestigateRoom();
+        }
+        else if (l.isQuest)
+        {
+            narrowBackground.gameObject.SetActive(true);
+            wideBackground.gameObject.SetActive(false);
+            narrowBackground.sprite = l.background;
+            loadQuestionRoom();
         }
         else
         {
             narrowBackground.gameObject.SetActive(true);
             wideBackground.gameObject.SetActive(false);
             narrowBackground.sprite = l.background;
+            loadNextDialogue(l);
         }
-        loadNextDialogue(l);
     }
 
     private void loadDialogues(LocationObject location)
@@ -136,5 +171,15 @@ public class LocationManager : MonoBehaviour
     private void endGame()
     {
         SceneManager.LoadScene("Build");
+    }
+
+    private void loadQuestionRoom()
+    {
+
+    }
+
+    private void loadInvestigateRoom()
+    {
+
     }
 }
