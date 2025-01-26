@@ -13,12 +13,14 @@ MonoBehaviour:
   m_Name: 001. Monologue
   m_EditorClassIdentifier: 
   speakerNames:
+  - '??? '
   - ???
   - ???
   - ???
   - ???
   - ???
   paragraphs:
+  - . . . . . . . . . . . . . . . . . . .
   - The city shines as usual. .
   - The sun reflects off the windows, and the streets are bubbling with life
   - Everything seems to float just fine here.
@@ -26,6 +28,7 @@ MonoBehaviour:
   - "Sooner or later, they pop\u2014and I\u2019m the one who has to clean up the
     mess."
   speakerImages:
+  - {fileID: 5423477181114419476, guid: 036bdbbfac041c9459b6a1d02b37265f, type: 3}
   - {fileID: 5423477181114419476, guid: 036bdbbfac041c9459b6a1d02b37265f, type: 3}
   - {fileID: 5423477181114419476, guid: 036bdbbfac041c9459b6a1d02b37265f, type: 3}
   - {fileID: 5423477181114419476, guid: 036bdbbfac041c9459b6a1d02b37265f, type: 3}

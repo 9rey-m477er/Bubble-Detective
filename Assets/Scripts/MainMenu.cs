@@ -6,10 +6,13 @@ using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
-    public GameObject MainMenuAssets;
+    public GameObject MainMenuAssets, TitleCanvas;
     public GameObject CreditsAssets;
+    public GameObject GameCanvas;
     public Image fadeImage;
     public float fadeDuration = .75f;
+
+    public LocationManager locationManager;
 
     public TextMeshProUGUI creditsText;
     public TextMeshProUGUI sourcesText;
@@ -49,6 +52,11 @@ public class MainMenu : MonoBehaviour
         StartCoroutine(fadeToMainMenu());
     }
 
+    public void goToGame()
+    {
+        StartCoroutine(fadeToPlay());
+    }
+
     public IEnumerator fadeToCredits()
     {
         fadeImage.gameObject.SetActive(true);
@@ -69,6 +77,17 @@ public class MainMenu : MonoBehaviour
         yield return StartCoroutine(Fade(0));
         fadeImage.gameObject.SetActive(false);
 
+    }
+
+    public IEnumerator fadeToPlay()
+    {
+        fadeImage.gameObject.SetActive(true);
+        yield return StartCoroutine(Fade(1));
+        TitleCanvas.SetActive(false);
+        GameCanvas.SetActive(true);
+        yield return StartCoroutine(Fade(0));
+        locationManager.gameStart();
+        fadeImage.gameObject.SetActive(false);
     }
 
     public IEnumerator onStartFade()
