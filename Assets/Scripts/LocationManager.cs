@@ -222,6 +222,24 @@ public class LocationManager : MonoBehaviour
                 testQ.SetActive(true);
                 break;
             case "008 - int room fisher":
+                fishQ.SetActive(true);
+                break;
+            case "010 - detectives office rival chef":
+                rivalQ.SetActive(true);
+                break;
+            case "015 - int room chef":
+                chefQ.SetActive(true);
+                break;
+            case "017 - detective office spouse":
+                spouse1Q.SetActive(true);
+                break;
+            case "019 - int room spouse":
+                spouse2Q.SetActive(true);
+                break;
+            case "023 - int room chef":
+                chefFQ.SetActive(true);
+                break;
+            case "024 - int room fisherman":
                 fishFQ.SetActive(true);
                 break;
         }
@@ -260,8 +278,50 @@ public class LocationManager : MonoBehaviour
             case "fisherq5":
                 fishQ5 = true;
                 break;
-            case "fisherq1":
-                fishQ1 = true;
+            case "rivalq1":
+                rivalQ1 = true;
+                break;
+            case "rivalq2":
+                rivalQ2 = true;
+                break;
+            case "rivalq3":
+                rivalQ3 = true;
+                break;
+            case "rivalq4":
+                rivalQ4 = true;
+                break;
+            case "chefq1":
+                chefQ1 = true;
+                break;
+            case "chefq2":
+                chefQ2 = true;
+                break;
+            case "chefq3":
+                chefQ3 = true;
+                break;
+            case "chefq4":
+                chefQ4 = true;
+                break;
+            case "dawnq1":
+                spouse1Q1 = true;
+                break;
+            case "dawnq2":
+                spouse1Q2 = true;
+                break;
+            case "dawnq3":
+                spouse1Q3 = true;
+                break;
+            case "dawnq4":
+                spouse2Q1 = true;
+                break;
+            case "dawnq5":
+                spouse2Q2 = true;
+                break;
+            case "fchef1":
+                chefFQ1 = true;
+                break;
+            case "ffish1":
+                fishFQ1 = true;
                 break;
         }
         switch (l.name)
@@ -274,11 +334,48 @@ public class LocationManager : MonoBehaviour
                 }
                 break;
 
-            case "FishInter":
+            case "008 - int room fisher":
                 if(fishQ1 && fishQ2 && fishQ3 && fishQ4 && fishQ5)
                 {
-
+                    ContinueButton.gameObject.SetActive(true);
                 }
+                break;
+            case "010 - detectives office rival chef":
+                if (rivalQ1 && rivalQ2 && rivalQ3 && rivalQ4)
+                {
+                    ContinueButton.gameObject.SetActive(true);
+                }
+                break;
+            case "015 - int room chef":
+                if (chefQ1 && chefQ2 && chefQ3 && chefQ4)
+                {
+                    ContinueButton.gameObject.SetActive(true);
+                }
+                break;
+            case "017 - detective office spouse":
+                if (spouse1Q1 && spouse1Q2 && spouse1Q3)
+                {
+                    ContinueButton.gameObject.SetActive(true);
+                }
+                break;
+            case "019 - int room spouse":
+                if (spouse2Q1 && spouse2Q2)
+                {
+                    ContinueButton.gameObject.SetActive(true);
+                }
+                break;
+            case "023 - int room chef":
+                if (chefFQ1)
+                {
+                    ContinueButton.gameObject.SetActive(true);
+                }
+                break;
+            case "024 - int room fisherman":
+                if (fishFQ1)
+                {
+                    ContinueButton.gameObject.SetActive(true);
+                }
+                break;
         }
     }
 
