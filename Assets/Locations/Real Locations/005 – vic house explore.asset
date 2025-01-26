@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: "005 \u2013 vic house explore"
   m_EditorClassIdentifier: 
   dialogues: []
-  background: {fileID: 21300000, guid: 9ff9dd10363de5d46afc474c7b360398, type: 3}
+  background: {fileID: 21300000, guid: aaeada393d412b14a9387bd408884198, type: 3}
   nextLocation: {fileID: 11400000, guid: 6deedb0c6236ffd47af0d28febb70a8c, type: 2}
   isInvest: 1
   isQuest: 0
+  isMusicChanging: 0
+  newMusic: {fileID: 0}
