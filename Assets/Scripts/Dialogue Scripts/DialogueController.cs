@@ -43,12 +43,25 @@ public class DialogueController : MonoBehaviour
         i = sprites.Dequeue();
         //soundManager.PlaySoundClip(3);
         npcNameText.text = n;
-        npcDialogueText.text = p;
+        //npcDialogueText.text = p; //HERE <-----------------
         npcPortrait.sprite = i;
+
+        StopAllCoroutines(); // Ensure no overlapping coroutines
+        StartCoroutine(TypeText(p)); // Start the typewriter effect
 
         if (paragraphs.Count == 0)
         {
             conversationEnded = true;
+        }
+    }
+
+    private IEnumerator TypeText(string fullText)
+    {
+        npcDialogueText.text = ""; // Clear the current text
+        foreach (char letter in fullText.ToCharArray())
+        {
+            npcDialogueText.text += letter; // Add one letter at a time
+            yield return new WaitForSeconds(0.035f); // Wait between letters (adjust for speed)
         }
     }
 

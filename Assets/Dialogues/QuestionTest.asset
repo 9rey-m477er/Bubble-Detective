@@ -18,10 +18,11 @@ MonoBehaviour:
   - Sol. Vedit
   - Spouse
   paragraphs:
-  - Who are you?
-  - SQUID GAMEEEEE
+  - What am I?
+  - Of course! Here's a witty response to that question! "You are impoppable to deal
+    with!" Let me know if you want it to be more witty or more serious!
   - '?'
-  - bing chilling
+  - oops copy paste
   speakerImages:
   - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
   - {fileID: -6956087720970070490, guid: 0f7c0eb09de6f1e449546f067221deb5, type: 3}
