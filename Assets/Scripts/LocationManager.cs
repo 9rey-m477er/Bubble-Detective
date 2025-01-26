@@ -105,11 +105,6 @@ public class LocationManager : MonoBehaviour
 
     public void advanceLocation()
     {
-        if (l.isMusicChanging == true)
-        {
-            updateMusic();
-        }
-
         if (locationObjects.Count == 0)
         {
             endGame();
@@ -117,6 +112,11 @@ public class LocationManager : MonoBehaviour
         }
 
         l = locationObjects.Dequeue();
+
+        if (l.isMusicChanging == true)
+        {
+            updateMusic();
+        }
         if (l.isInvest)
         {
             Debug.Log("is invest");
@@ -370,17 +370,23 @@ public class LocationManager : MonoBehaviour
             fadeMusicOut(Interview2);
             fadeMusicIn(Interrogation3);
         }
+        if(l.currentTrack == 4)
+        {
+            fadeMusicOut(DetectiveTheme1);
+            fadeMusicOut(Interview2);
+            fadeMusicOut(Interrogation3);
+        }
     }
 
 
     public void fadeMusicOut(AudioSource audioSource)
     {
-        StartCoroutine(soundManager.FadeInMusic(audioSource));
+        StartCoroutine(soundManager.FadeOutMusic(audioSource));
     }
 
     public void fadeMusicIn(AudioSource audioSource)
     {
-        StartCoroutine(soundManager.FadeOutMusic(audioSource));
+        StartCoroutine(soundManager.FadeInMusic(audioSource));
     }
 
 }

@@ -20,3 +20,4 @@ MonoBehaviour:
   isQuest: 0
   isMusicChanging: 0
   newMusic: {fileID: 0}
+  currentTrack: 4

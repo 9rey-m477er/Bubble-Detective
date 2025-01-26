@@ -58,7 +58,7 @@ public class SoundManager : MonoBehaviour
         //onFadeComplete?.Invoke(); // Trigger callback after fading out
     }
 
-    public IEnumerator FadeInMusic(AudioSource musicSource, float duration = 1f)
+    public IEnumerator FadeInMusic(AudioSource musicSource, float duration = 2f)
     {
         musicSource.volume = 0f;
         musicSource.Play();
