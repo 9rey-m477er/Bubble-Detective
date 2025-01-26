@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 017.5 - Post Questioning Dawn
   m_EditorClassIdentifier: 
   dialogues: []
-  background: {fileID: 0}
+  background: {fileID: -3085770236113497050, guid: cebb4ead9724f9d46a034b992483b023, type: 3}
   nextLocation: {fileID: 0}
   isInvest: 0
   isQuest: 0

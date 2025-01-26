@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c42d4f2e835f6874bba65344be3e888e, type: 3}
   m_Name: 008.5 - Post Questioning Bubba
   m_EditorClassIdentifier: 
-  dialogues: []
-  background: {fileID: 0}
+  dialogues:
+  - {fileID: 11400000, guid: c9bcf3edc48e9bc47963b1c1bd0cc20f, type: 2}
+  background: {fileID: 21300000, guid: 94aa9a0cc7700884794a1bd2fdb52c0d, type: 3}
   nextLocation: {fileID: 0}
   isInvest: 0
   isQuest: 0
