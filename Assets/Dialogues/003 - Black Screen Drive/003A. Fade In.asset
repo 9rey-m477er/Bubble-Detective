@@ -10,12 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f5813f23d117dc84db6d93450b04c609, type: 3}
-  m_Name: Dawn Dishopp2
+  m_Name: 003A. Fade In
   m_EditorClassIdentifier: 
   speakerNames:
-  - Dawn
   - Sol. Vedit
-  - Dawn
-  - Sol. Vedit
-  paragraphs: []
-  speakerImages: []
+  paragraphs:
+  - I got in my car and drove to the victim's house.
+  speakerImages:
+  - {fileID: 5423477181114419476, guid: 036bdbbfac041c9459b6a1d02b37265f, type: 3}

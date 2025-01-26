@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f5813f23d117dc84db6d93450b04c609, type: 3}
-  m_Name: Chief Convo
+  m_Name: 002B. Chief Phone Call
   m_EditorClassIdentifier: 
   speakerNames:
   - Sol. Vedit
@@ -18,34 +18,21 @@ MonoBehaviour:
   - B. Urst
   - Sol. Vedit
   - B. Urst
-  - B. Urst
-  - B. Urst
-  - B. Urst
   - Sol. Vedit
   - B. Urst
-  - Sol. Vedit
   paragraphs:
-  - Hey, Chief
-  - You're here. Let's get down to business.
-  - The victim's name is Popp Ed.
-  - (Oof. I feel bad about the "pop" pun earlier).
-  - He was found dead by his wife in the kitchen around 5 AM.
-  - The estimated time of death was around 8 PM yesterday.
-  - Murder weapon is unknown but from the autopsy it looks to be a sharp instrument.
-  - I trust you can handle it from here?
-  - Yeah, like always.
-  - Good. I'll be waiting by the door taking calls. There's the wife and neighbor
-    over there.
-  - Alright.
+  - Chief.
+  - Sol. Vedit.
+  - I have another case for you. Hurry up and get down here.
+  - Looks like I'm gonna have to pop another case wide open.
+  - ...
+  - Chief?
+  - Just get down here!
   speakerImages:
   - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
   - {fileID: 4878911623737468285, guid: 31a4dc14f5ebfc144bf26e1564e76f09, type: 3}
   - {fileID: 4878911623737468285, guid: 31a4dc14f5ebfc144bf26e1564e76f09, type: 3}
   - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
   - {fileID: 4878911623737468285, guid: 31a4dc14f5ebfc144bf26e1564e76f09, type: 3}
-  - {fileID: 4878911623737468285, guid: 31a4dc14f5ebfc144bf26e1564e76f09, type: 3}
-  - {fileID: 4878911623737468285, guid: 31a4dc14f5ebfc144bf26e1564e76f09, type: 3}
-  - {fileID: 4878911623737468285, guid: 31a4dc14f5ebfc144bf26e1564e76f09, type: 3}
   - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
   - {fileID: 4878911623737468285, guid: 31a4dc14f5ebfc144bf26e1564e76f09, type: 3}
-  - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}

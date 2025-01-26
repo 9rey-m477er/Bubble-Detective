@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5813f23d117dc84db6d93450b04c609, type: 3}
+  m_Name: 005A. Missing Knife
+  m_EditorClassIdentifier: 
+  speakerNames:
+  - Sol. Vedit
+  - Dawn Dishopp
+  - Sol. Vedit
+  - Dawn Dishopp
+  - Dawn Dishopp
+  - Dawn Dishopp
+  - Sol. Vedit
+  - Sol. Vedit
+  paragraphs:
+  - I see there's a knife missing, Ms. Dishopp. Know anything about it?
+  - Chef Boil Hardee has it.
+  - And this person is?
+  - My husband's best friend. Popp told me that Hardee needed to borrow a knife.
+  - Don't know why Hardee didn't just get one from his house instead of taking one
+    of ours.
+  - Though he said that Popp had a specific knife that he needed to use for his shop,
+    so I don't know.
+  - Thanks for the information.
+  - '(That is weird. I''m gonna have to walk to Chef Boil Hardee at some point.)
+
+'
+  speakerImages:
+  - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
+  - {fileID: -6956087720970070490, guid: 0f7c0eb09de6f1e449546f067221deb5, type: 3}
+  - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
+  - {fileID: -6956087720970070490, guid: 0f7c0eb09de6f1e449546f067221deb5, type: 3}
+  - {fileID: -6956087720970070490, guid: 0f7c0eb09de6f1e449546f067221deb5, type: 3}
+  - {fileID: -6956087720970070490, guid: 0f7c0eb09de6f1e449546f067221deb5, type: 3}
+  - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
+  - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}

@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5813f23d117dc84db6d93450b04c609, type: 3}
+  m_Name: 005C. Fish Hook2
+  m_EditorClassIdentifier: 
+  speakerNames:
+  - Dawn Dishopp
+  - Dawn Dishopp
+  - Dawn Dishopp
+  - Sol. Vedit
+  paragraphs:
+  - That is until Popp showed up.
+  - How an amateur beats a professional like it's nothing is beyond me.
+  - Everyone congratulated Popps and so did Bubba, but I could see he hated how his
+    fame was stolen from him.
+  - (Very interesting. I know who else to talk to.)
+  speakerImages:
+  - {fileID: -6956087720970070490, guid: 0f7c0eb09de6f1e449546f067221deb5, type: 3}
+  - {fileID: -6956087720970070490, guid: 0f7c0eb09de6f1e449546f067221deb5, type: 3}
+  - {fileID: -6956087720970070490, guid: 0f7c0eb09de6f1e449546f067221deb5, type: 3}
+  - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}

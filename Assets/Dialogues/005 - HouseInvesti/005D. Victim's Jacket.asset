@@ -10,35 +10,44 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f5813f23d117dc84db6d93450b04c609, type: 3}
-  m_Name: Dawn Dishopp
+  m_Name: 005D. Victim's Jacket
   m_EditorClassIdentifier: 
   speakerNames:
+  - Sol. Vedit
+  - Dawn Dishopp
   - Dawn Dishopp
   - Sol. Vedit
   - Dawn Dishopp
   - Sol. Vedit
-  - Dawn Dishopp
   - Sol. Vedit
-  - Dawn Dishopp
   - Sol. Vedit
+  - B. Urst
+  - Sol. Vedit
+  - B. Urst
   - Sol. Vedit
   paragraphs:
-  - At 7:00.
-  - Was your husband home?
-  - Yes.
-  - Did he act strange in any way before you left?
-  - Not any stranger than he already was.
-  - Ok. I'm gonna search around for clues. I'll let you know if I find anything.
-  - Take your time.
-  - (Man. She doesn't give a damn whatsoever. Doesn't she know she's a prime suspect?)
-  - What time did you leave for work last night?
+  - Is this Popp's jacket?
+  - It is.
+  - Wait, is that residue?
+  - Huh?
+  - There's some residue on the bottom of the jacket.
+  - (I flipped the jacket around and saw the residue.)
+  - (Could it be from the victim?)
+  - Hey Chief?
+  - Yes
+  - This jacket has some residue on it, could I have it tested at the lab?
+  - Sure, I'll take it down there. I'll call you once I have the results.
+  - Thanks Chief.
   speakerImages:
+  - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
+  - {fileID: -6956087720970070490, guid: 0f7c0eb09de6f1e449546f067221deb5, type: 3}
   - {fileID: -6956087720970070490, guid: 0f7c0eb09de6f1e449546f067221deb5, type: 3}
   - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
   - {fileID: -6956087720970070490, guid: 0f7c0eb09de6f1e449546f067221deb5, type: 3}
   - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
-  - {fileID: -6956087720970070490, guid: 0f7c0eb09de6f1e449546f067221deb5, type: 3}
   - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
-  - {fileID: -6956087720970070490, guid: 0f7c0eb09de6f1e449546f067221deb5, type: 3}
   - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
+  - {fileID: 4878911623737468285, guid: 31a4dc14f5ebfc144bf26e1564e76f09, type: 3}
+  - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
+  - {fileID: 4878911623737468285, guid: 31a4dc14f5ebfc144bf26e1564e76f09, type: 3}
   - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
