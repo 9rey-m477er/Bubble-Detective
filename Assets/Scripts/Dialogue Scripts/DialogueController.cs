@@ -87,6 +87,7 @@ public class DialogueController : MonoBehaviour
 
     public void EndConversation()
     {
+        Debug.Log("Conversation Ended");
         paragraphs.Clear();
         names.Clear();
         conversationEnded = false;
