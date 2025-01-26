@@ -7841,18 +7841,18 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 822331404}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2909388d799c9d94f910ef867afb4e08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocationManager: {fileID: 0}
-  goodEnding: {fileID: 0}
-  badEnding: {fileID: 0}
-  background: {fileID: 0}
-  textbox: {fileID: 0}
-  theChair: {fileID: 0}
-  nothing: {fileID: 0}
+  LocationManager: {fileID: 1900725055}
+  goodEnding: {fileID: 11400000, guid: f3b8ae0bf1519a4499542a3d7fe0dc85, type: 2}
+  badEnding: {fileID: 11400000, guid: d0ea3a7ad5601184da5c12780ef90ff5, type: 2}
+  background: {fileID: 1307822242}
+  textbox: {fileID: 633491738}
+  theChair: {fileID: 21300000, guid: 630a2c75bd148df4aa0e5b6f093c5b07, type: 3}
+  nothing: {fileID: 21300000, guid: b0c284233f2eda04b883c2839d8d7756, type: 3}
   buttons: {fileID: 1823007622}
   fadeImage: {fileID: 1190714190}
   fadeDuration: 2
@@ -15994,7 +15994,7 @@ MonoBehaviour:
   fishFQ: {fileID: 355052028}
   houseEv: {fileID: 1784105724}
   chefEv: {fileID: 880924012}
-  epilogue: {fileID: 0}
+  epilogue: {fileID: 822331404}
   missKnife: 0
   body: 0
   beer: 0

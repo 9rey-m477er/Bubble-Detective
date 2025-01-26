@@ -27,15 +27,17 @@ public class EndingButtons : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(executionDone == true)
+        if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            if (Input.GetKeyDown(KeyCode.Mouse0))
+            Debug.Log("Click!");
+            if (executionDone == true)
             {
                 executionDone = false;
                 LocationManager.selectingCulprit = false;
                 LocationManager.advanceLocation();
             }
         }
+
     }
 
     public void addButtons() //pop up ending buttons
