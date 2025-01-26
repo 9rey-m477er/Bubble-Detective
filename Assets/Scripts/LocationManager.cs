@@ -221,6 +221,9 @@ public class LocationManager : MonoBehaviour
             case "TestInter1":
                 testQ.SetActive(true);
                 break;
+            case "008 - int room fisher":
+                fishFQ.SetActive(true);
+                break;
         }
     }
 
@@ -242,6 +245,24 @@ public class LocationManager : MonoBehaviour
             case "BottomButton":
                 testQ3 = true;
                 break;
+            case "fisherq1":
+                fishQ1 = true;
+                break;
+            case "fisherq2":
+                fishQ2 = true;
+                break;
+            case "fisherq3":
+                fishQ3 = true;
+                break;
+            case "fisherq4":
+                fishQ4 = true;
+                break;
+            case "fisherq5":
+                fishQ5 = true;
+                break;
+            case "fisherq1":
+                fishQ1 = true;
+                break;
         }
         switch (l.name)
         {
@@ -252,6 +273,12 @@ public class LocationManager : MonoBehaviour
                     return;
                 }
                 break;
+
+            case "FishInter":
+                if(fishQ1 && fishQ2 && fishQ3 && fishQ4 && fishQ5)
+                {
+
+                }
         }
     }
 
