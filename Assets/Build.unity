@@ -7816,11 +7816,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2909388d799c9d94f910ef867afb4e08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LocationManager: {fileID: 0}
+  goodEnding: {fileID: 0}
+  badEnding: {fileID: 0}
   goodAssets: {fileID: 1093398749}
   badAssets: {fileID: 350922734}
   buttons: {fileID: 1823007622}
   fadeImage: {fileID: 0}
   fadeDuration: 2
+  executionDone: 0
+  continue1: 0
 --- !u!1 &829644107
 GameObject:
   m_ObjectHideFlags: 0
@@ -15518,13 +15523,40 @@ MonoBehaviour:
   wideBackground: {fileID: 559298754}
   dialogueController: {fileID: 1595673588}
   locations:
-  - {fileID: 11400000, guid: 59eba6ce3c6b8264fab4b2aea7ea9d1e, type: 2}
-  - {fileID: 11400000, guid: a81e04f80a99dd24da21ebebd99943e8, type: 2}
-  - {fileID: 11400000, guid: 5dae792fb9affe847a466da0b3b317dc, type: 2}
-  - {fileID: 11400000, guid: 5c11d971a898749439281228ad6e8f70, type: 2}
-  - {fileID: 11400000, guid: 59eba6ce3c6b8264fab4b2aea7ea9d1e, type: 2}
-  - {fileID: 11400000, guid: 6a572a95aeaf35840a6a6c4e0d14ff0a, type: 2}
-  - {fileID: 11400000, guid: 5dae792fb9affe847a466da0b3b317dc, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   clickHandler: {fileID: 1900725054}
   executeDawn: {fileID: 0}
   executeBubba: {fileID: 0}

@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c42d4f2e835f6874bba65344be3e888e, type: 3}
   m_Name: "026 \u2013 police chief office"
   m_EditorClassIdentifier: 
-  dialogues: []
+  dialogues:
+  - {fileID: 11400000, guid: 4a5709d42d4b4b749bba9a2aa8bb34aa, type: 2}
   background: {fileID: 21300000, guid: 402b9f6439cb911438dd5d92d2f91dfc, type: 3}
   nextLocation: {fileID: 11400000, guid: 1c9f43098b67ad447ad9171abb51d843, type: 2}
   isInvest: 0
   isQuest: 0
+  isMusicChanging: 0
+  newMusic: {fileID: 0}

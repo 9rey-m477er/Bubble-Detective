@@ -15,18 +15,18 @@ MonoBehaviour:
   speakerNames:
   - Sol. Vedit
   - Sol. Vedit
-  - Sol. Vedit
+  - Phone
   - Sol. Vedit
   paragraphs:
   - "Name\u2019s Solomon Vedit. People just call me Detective Sol. Vedit.\r\n"
   - "\rI don\u2019t let the city\u2019s shine distract me. Beneath the surface, it\u2019s
     all murky water with someone always ready to drown in it.\r\nAnd when every case\r\n\n\r\n"
-  - '*Phone Rings*'
+  - '*ring* *ring*'
   - 'It''s that time again
 
 '
   speakerImages:
   - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
   - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
-  - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
+  - {fileID: 5423477181114419476, guid: 036bdbbfac041c9459b6a1d02b37265f, type: 3}
   - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}

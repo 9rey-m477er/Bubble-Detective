@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c42d4f2e835f6874bba65344be3e888e, type: 3}
   m_Name: "027 \u2013 black screen ACCUSE"
   m_EditorClassIdentifier: 
-  dialogues: []
+  dialogues:
+  - {fileID: 11400000, guid: f8123b82a8f1aee4c8b09dc263a6ba84, type: 2}
   background: {fileID: 21300000, guid: 52fd7f8068771b246a2130a9d426a15f, type: 3}
   nextLocation: {fileID: 11400000, guid: c383367150315e447b9911a73a4147a6, type: 2}
   isInvest: 0
   isQuest: 0
+  isMusicChanging: 0
+  newMusic: {fileID: 0}
