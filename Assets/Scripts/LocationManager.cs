@@ -1,14 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Rendering;
 using UnityEngine;
 
 public class LocationManager : MonoBehaviour
 {
     public int currentLocation = 0;
     public int currentDialogue = 0;
-    public LocationObject LocationObject;
     public DialogueController DialogueController;
-    public List<LocationObject> locationObjects;
+    public Queue<LocationObject> locationObjects = new Queue<LocationObject>();
     void Start()
     {
         
@@ -17,14 +17,24 @@ public class LocationManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(DialogueController.conversationEnded == true) //go to next dialogue
-        {
-            currentDialogue++;
-            DialogueController.displayNextParagraph(locationObjects[currentLocation].dialogues[currentDialogue]);
-        }
-        if(LocationObject.dialogues.Count == currentDialogue)
+        //if(DialogueController.conversationEnded == true) //go to next dialogue
+        //{
+        //    currentDialogue++;
+        //    DialogueController.displayNextParagraph(locationObjects[currentLocation].dialogues[currentDialogue]);
+        //}
+        //if(LocationObject.dialogues.Count == currentDialogue)
+        //{
+
+        //}
+    }
+
+    private void loadLocation(LocationObject location)
+    {
+
+        for (int i = 0; i < location.dialogues.Length; i++)
         {
 
         }
+        //Conner put your fade here.
     }
 }

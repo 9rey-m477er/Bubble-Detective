@@ -6,7 +6,7 @@ using UnityEngine.UI;
 [CreateAssetMenu(menuName = "BubbleDetective/Locations/New Location")]
 public class LocationObject : ScriptableObject
 {
-    public List<DialogueText> dialogues;
+    public DialogueText[] dialogues;
     public Sprite background;
     public LocationObject nextLocation;
     public bool isInvest;
