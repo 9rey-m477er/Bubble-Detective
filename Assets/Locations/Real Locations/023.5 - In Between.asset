@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c42d4f2e835f6874bba65344be3e888e, type: 3}
   m_Name: 023.5 - In Between
   m_EditorClassIdentifier: 
-  dialogues: []
+  dialogues:
+  - {fileID: 11400000, guid: 3cad882359189af4ea4ba33b5bd6a6cb, type: 2}
   background: {fileID: 0}
   nextLocation: {fileID: 0}
   isInvest: 0
