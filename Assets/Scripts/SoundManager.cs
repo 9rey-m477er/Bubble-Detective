@@ -43,7 +43,17 @@ public class SoundManager : MonoBehaviour
         }
     }
 
+<<<<<<< Updated upstream
     public void PlaySpecificClip(AudioClip ac)
+=======
+    public void ChangeMusic(AudioClip ac)
+    {
+        Music.Stop();
+        Music.clip = ac;
+        Music.PlayDelayed(0.5f);
+    }
+    public IEnumerator FadeOutMusic(AudioSource musicSource, System.Action onFadeComplete = null, float duration = 1f)
+>>>>>>> Stashed changes
     {
         AS.PlayOneShot(ac);
     }

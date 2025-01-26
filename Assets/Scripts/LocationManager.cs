@@ -93,6 +93,12 @@ public class LocationManager : MonoBehaviour
         }
 
         l = locationObjects.Dequeue();
+
+        if (l.isMusicChanging == true)
+        {
+            updateMusic();
+        }
+
         if (l.isInvest)
         {
             Debug.Log("is invest");
@@ -246,4 +252,40 @@ public class LocationManager : MonoBehaviour
         ContinueButton.gameObject.SetActive(false);
     }
 
+<<<<<<< Updated upstream
+=======
+    public void updateMusic()
+    {
+        if(l.currentTrack == 1)
+        {
+            fadeMusicOut(Interrogation3);
+            fadeMusicOut(Interview2);
+            fadeMusicIn(DetectiveTheme1);
+        }
+        if(l.currentTrack == 2)
+        {
+            fadeMusicOut(Interrogation3);
+            fadeMusicOut(DetectiveTheme1);
+            fadeMusicIn(Interview2);
+        }
+        if(l.currentTrack == 3)
+        {
+            fadeMusicOut(DetectiveTheme1);
+            fadeMusicOut(Interview2);
+            fadeMusicIn(Interrogation3);
+        }
+    }
+
+
+    public void fadeMusicOut(AudioSource audioSource)
+    {
+        StartCoroutine(soundManager.FadeOutMusic(audioSource));
+    }
+
+    public void fadeMusicIn(AudioSource audioSource)
+    {
+        StartCoroutine(soundManager.FadeInMusic(audioSource));
+    }
+
+>>>>>>> Stashed changes
 }

@@ -17,3 +17,9 @@ MonoBehaviour:
   nextLocation: {fileID: 11400000, guid: b7f3000ded9763d48b4c6c42d0ae4007, type: 2}
   isInvest: 0
   isQuest: 0
+<<<<<<< Updated upstream
+=======
+  isMusicChanging: 0
+  newMusic: {fileID: 0}
+  currentTrack: 1
+>>>>>>> Stashed changes
