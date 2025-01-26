@@ -17,14 +17,20 @@ public class LocationManager : MonoBehaviour
     public Image wideBackground;
     public DialogueController dialogueController;
     public LocationObject[] locations;
+    public ClickHandler clickHandler;
     private bool dialoguesFinished = false;
     private bool isDialogueOpen = false;
+
+    public GameObject questionSpace, testQ, fishQ, rivalQ, chefQ, spouse1Q, spouse2Q, chefFQ, fishFQ, houseEv, chefEv;
 
     //HouseInvest
     public bool missKnife, body, beer, hook, jacket;
 
     //ChefInvest
     public bool foundKnife, dart, picture;
+
+    //TestInter
+    public bool testQ1, testQ2, testQ3;
 
     //FishInter
     private bool fishQ1, fishQ2, fishQ3, fishQ4, fishQ5;
@@ -106,7 +112,7 @@ public class LocationManager : MonoBehaviour
             narrowBackground.gameObject.SetActive(true);
             wideBackground.gameObject.SetActive(false);
             narrowBackground.sprite = l.background;
-            loadQuestionRoom();
+            loadQuestionRoom(l);
         }
         else
         {
@@ -178,14 +184,67 @@ public class LocationManager : MonoBehaviour
         SceneManager.LoadScene("Build");
     }
 
-    private void loadQuestionRoom()
+    private void loadQuestionRoom(LocationObject location)
     {
-
+        dialogueController.EndConversation();
+        clickHandler.location = location;
+        questionSpace.SetActive(true);
+        switch (location.name)
+        {
+            case "TestInter1":
+                testQ.SetActive(true);
+                break;
+        }
     }
+
+    public void checkQuestionClick()
+    {
+        Debug.Log("Clicked Question");
+        GameObject clickedButton = EventSystem.current.currentSelectedGameObject;
+        string buttonName = clickedButton.name;
+        Debug.Log(buttonName);
+
+        switch (buttonName)
+        {
+            case "TopButton":
+                testQ1 = true;
+                break;
+            case "MiddleButton":
+                testQ2 = true;
+                break;
+            case "BottomButton":
+                testQ3 = true;
+                break;
+        }
+        switch (l.name)
+        {
+            case "TestInter1":
+                if (testQ1 && testQ2 && testQ3)
+                {
+                    ContinueButton.gameObject.SetActive(true);
+                    return;
+                }
+                break;
+        }
+    }
+
 
     private void loadInvestigateRoom(LocationObject location)
     {
         dialogueController.EndConversation();
+        clickHandler.location = location;
+        if (location.name == "005 – vic house explore")
+        {
+            houseEv.SetActive(true);
+            chefEv.SetActive(false);
+
+        }
+        if (location.name == "013 – chef shop explore")
+        {
+            chefEv.SetActive(true);
+            houseEv.SetActive(false);
+        }
+
     }
 
     public void EvidenceHandler() //buttons call this
@@ -221,8 +280,8 @@ public class LocationManager : MonoBehaviour
                 picture = true;
                 break;
         }
-        //Debug.Log(testName);
-        if (l.name == "Popp's House")
+        Debug.Log(testName);
+        if (l.name == "005 – vic house explore")
         {
             if (missKnife == true && body == true && beer == true && hook == true && jacket == true)
             {
@@ -230,7 +289,7 @@ public class LocationManager : MonoBehaviour
                 ContinueButton.gameObject.SetActive(true);
             }
         }
-        if (l.name == "Chef's Kitchen")
+        if (l.name == "013 – chef shop explore")
         {
             if (foundKnife == true && dart == true && picture == true)
             {
@@ -243,6 +302,9 @@ public class LocationManager : MonoBehaviour
     public void Continue()
     {
         advanceLocation();
+        houseEv.SetActive(false);
+        chefEv.SetActive(false);
+        questionSpace.SetActive(false);
         ContinueButton.gameObject.SetActive(false);
     }
 

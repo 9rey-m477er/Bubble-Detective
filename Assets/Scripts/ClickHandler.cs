@@ -5,7 +5,7 @@ using UnityEngine;
 public class ClickHandler : MonoBehaviour
 {
     [SerializeField] private DialogueController dialogueController;
-    [SerializeField] private LocationObject location;
+    public LocationObject location;
     public bool isDialogueOpen = false;
     public bool isQuestionOpen = false;
     public GameObject questionSpace;
