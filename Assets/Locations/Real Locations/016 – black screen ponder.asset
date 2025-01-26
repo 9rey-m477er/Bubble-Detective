@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c42d4f2e835f6874bba65344be3e888e, type: 3}
   m_Name: "016 \u2013 black screen ponder"
   m_EditorClassIdentifier: 
-  dialogues: []
+  dialogues:
+  - {fileID: 11400000, guid: 52a6fd8077404774eb1711909047fb5b, type: 2}
   background: {fileID: 21300000, guid: 52fd7f8068771b246a2130a9d426a15f, type: 3}
   nextLocation: {fileID: 11400000, guid: 50983d1c228472845b33fbf002f27851, type: 2}
   isInvest: 0
   isQuest: 0
+  isMusicChanging: 0
+  newMusic: {fileID: 0}

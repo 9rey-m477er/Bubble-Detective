@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c42d4f2e835f6874bba65344be3e888e, type: 3}
-  m_Name: "009 \u2013 black screen ponder"
+  m_Name: 023.5 - In Between
   m_EditorClassIdentifier: 
   dialogues:
-  - {fileID: 11400000, guid: 3d78793a7990f0442855f1b140bffceb, type: 2}
-  background: {fileID: 21300000, guid: 52fd7f8068771b246a2130a9d426a15f, type: 3}
-  nextLocation: {fileID: 11400000, guid: 6f8efcde727408f42baa048b332499a4, type: 2}
+  - {fileID: 11400000, guid: 3cad882359189af4ea4ba33b5bd6a6cb, type: 2}
+  background: {fileID: 21300000, guid: 94aa9a0cc7700884794a1bd2fdb52c0d, type: 3}
+  nextLocation: {fileID: 0}
   isInvest: 0
   isQuest: 0
   isMusicChanging: 0

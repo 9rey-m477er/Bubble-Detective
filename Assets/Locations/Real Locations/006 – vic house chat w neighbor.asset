@@ -12,8 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c42d4f2e835f6874bba65344be3e888e, type: 3}
   m_Name: "006 \u2013 vic house chat w neighbor"
   m_EditorClassIdentifier: 
-  dialogues: []
+  dialogues:
+  - {fileID: 11400000, guid: eefddb704cab8b948a0a5434de4d510e, type: 2}
+  - {fileID: 11400000, guid: 435a9676c7e995a42a1834b85e4e4f1c, type: 2}
   background: {fileID: 21300000, guid: ef6230ded585b42438c78353e681df74, type: 3}
   nextLocation: {fileID: 11400000, guid: 1db598ca1f4ad5643b6c99fe9357a05d, type: 2}
   isInvest: 0
   isQuest: 0
+  isMusicChanging: 0
+  newMusic: {fileID: 0}

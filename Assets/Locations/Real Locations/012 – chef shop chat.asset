@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c42d4f2e835f6874bba65344be3e888e, type: 3}
   m_Name: "012 \u2013 chef shop chat"
   m_EditorClassIdentifier: 
-  dialogues: []
+  dialogues:
+  - {fileID: 11400000, guid: d74b753ba1abf364b83568a78e713f9b, type: 2}
   background: {fileID: 21300000, guid: 63b41e4633d91064eb52b55b46bdd7da, type: 3}
   nextLocation: {fileID: 11400000, guid: 6a572a95aeaf35840a6a6c4e0d14ff0a, type: 2}
   isInvest: 0
   isQuest: 0
+  isMusicChanging: 0
+  newMusic: {fileID: 0}
