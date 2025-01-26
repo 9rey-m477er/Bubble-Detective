@@ -17,5 +17,29 @@ MonoBehaviour:
   - Sol. Vedit
   - Dawn
   - Sol. Vedit
-  paragraphs: []
-  speakerImages: []
+  - Dawn
+  - Sol. Vedit
+  - Dawn
+  - Sol. Vedit
+  - Sol. Vedit
+  paragraphs:
+  - At 7:00.
+  - Was your husband home?
+  - Yes.
+  - Did he act strange in any way before you left?
+  - Not any more stranger than he already was.
+  - Ok. I'm going to search around for clues. I'll let you know if I find anything.
+  - Take your time.
+  - (Man. She doesn't give a damn whatsoever. Doesn't she know that she's a prime
+    suspect?)
+  - (Well, I should look around.)
+  speakerImages:
+  - {fileID: -6956087720970070490, guid: 0f7c0eb09de6f1e449546f067221deb5, type: 3}
+  - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
+  - {fileID: -6956087720970070490, guid: 0f7c0eb09de6f1e449546f067221deb5, type: 3}
+  - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
+  - {fileID: -6956087720970070490, guid: 0f7c0eb09de6f1e449546f067221deb5, type: 3}
+  - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
+  - {fileID: -6956087720970070490, guid: 0f7c0eb09de6f1e449546f067221deb5, type: 3}
+  - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
+  - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}

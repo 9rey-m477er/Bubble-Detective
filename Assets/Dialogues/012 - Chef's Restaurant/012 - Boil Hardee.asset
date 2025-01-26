@@ -12,6 +12,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5813f23d117dc84db6d93450b04c609, type: 3}
   m_Name: 012 - Boil Hardee
   m_EditorClassIdentifier: 
-  speakerNames: []
-  paragraphs: []
-  speakerImages: []
+  speakerNames:
+  - Sol. Vedit
+  - Boil Hardee
+  - Boil Hardee
+  - Sol. Vedit
+  - Sol. Vedit
+  - Boil Hardee
+  - Sol. Vedit
+  - Boil Hardee
+  - Sol. Vedit
+  - Boil Hardee
+  paragraphs:
+  - (I could hear him as soon as I walked in.)
+  - What's wrong with ya?!
+  - You're supposed to chop the meat first, then hit it with the seasoning! You ain't
+    makin' a stew, you're makin' a mess!
+  - (Guess Flay wasn't lying.)
+  - Excuse me, Chef Hardee. I would like to ask you some questions.
+  - Who the hell are you? And what's it you want?
+  - Detective Solomon Vedit. I'm investigating the murder of your friend.
+  - You pointin' the finger at me?!
+  - I'm not. I'm here to look around and ask you some questions.
+  - Fine, but don't waste my time. Make it quick.
+  speakerImages:
+  - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
+  - {fileID: -2464623677970950858, guid: 55da0c6acb5620a488516e924488711f, type: 3}
+  - {fileID: -2464623677970950858, guid: 55da0c6acb5620a488516e924488711f, type: 3}
+  - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
+  - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
+  - {fileID: -2464623677970950858, guid: 55da0c6acb5620a488516e924488711f, type: 3}
+  - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
+  - {fileID: -2464623677970950858, guid: 55da0c6acb5620a488516e924488711f, type: 3}
+  - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
+  - {fileID: -2464623677970950858, guid: 55da0c6acb5620a488516e924488711f, type: 3}

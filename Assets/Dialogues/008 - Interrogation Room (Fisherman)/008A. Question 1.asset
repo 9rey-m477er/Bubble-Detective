@@ -12,6 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5813f23d117dc84db6d93450b04c609, type: 3}
   m_Name: 008A. Question 1
   m_EditorClassIdentifier: 
-  speakerNames: []
-  paragraphs: []
-  speakerImages: []
+  speakerNames:
+  - Sol. Vedit
+  - Bubba T.
+  paragraphs:
+  - How did you know the victim?
+  - Popp and I sailed the same water for a while. Only casting our lines as rivals
+    in the fishing competition.
+  speakerImages:
+  - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
+  - {fileID: 7924345146234068265, guid: 4422568c6b001e54e9c861cc1ddedfe5, type: 3}

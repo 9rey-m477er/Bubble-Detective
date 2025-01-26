@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5813f23d117dc84db6d93450b04c609, type: 3}
+  m_Name: 028B - Boil
+  m_EditorClassIdentifier: 
+  speakerNames:
+  - 'When considering all evidence and testimonies, it leads to one person. '
+  - 'When considering all evidence and testimonies, it leads to one person. '
+  - 'When considering all evidence and testimonies, it leads to one person. '
+  - 'When considering all evidence and testimonies, it leads to one person. '
+  - 'When considering all evidence and testimonies, it leads to one person. '
+  paragraphs:
+  - Boil was arrested and executed.
+  - "But I can\u2019t shake the feeling that justice wasn\u2019t truly served."
+  - "I made the call\u2014I chose them. And yet, something keeps gnawing at me, like
+    I sent the wrong person to the grave."
+  - "How can I keep calling myself a detective, knowing I handed down a sentence
+    that might\u2019ve belonged to someone else?"
+  - I made up my mind to finish out the year. Then I turned in my badge to the Chief
+    and walked away for good.
+  speakerImages:
+  - {fileID: 5423477181114419476, guid: 036bdbbfac041c9459b6a1d02b37265f, type: 3}
+  - {fileID: 5423477181114419476, guid: 036bdbbfac041c9459b6a1d02b37265f, type: 3}
+  - {fileID: 5423477181114419476, guid: 036bdbbfac041c9459b6a1d02b37265f, type: 3}
+  - {fileID: 5423477181114419476, guid: 036bdbbfac041c9459b6a1d02b37265f, type: 3}
+  - {fileID: 5423477181114419476, guid: 036bdbbfac041c9459b6a1d02b37265f, type: 3}

@@ -13,6 +13,20 @@ MonoBehaviour:
   m_Name: 005F. Empty Beer Bottles
   m_EditorClassIdentifier: 
   speakerNames:
-  - 
-  paragraphs: []
-  speakerImages: []
+  - Sol. Vedit
+  - Dawn
+  - Sol. Vedit
+  - Dawn
+  - Sol. Vedit
+  paragraphs:
+  - Do you and your husband drink?
+  - Just him. Though he always drinks one per night.
+  - Only one?
+  - Yes. I hate when he drinks though.
+  - Why were there two? Did he have someone over or is the wife lying?
+  speakerImages:
+  - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
+  - {fileID: -6956087720970070490, guid: 0f7c0eb09de6f1e449546f067221deb5, type: 3}
+  - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
+  - {fileID: -6956087720970070490, guid: 0f7c0eb09de6f1e449546f067221deb5, type: 3}
+  - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}

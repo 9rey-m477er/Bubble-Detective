@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5813f23d117dc84db6d93450b04c609, type: 3}
+  m_Name: 023.5 - Hardee Next
+  m_EditorClassIdentifier: 
+  speakerNames:
+  - Sol. Vedit
+  paragraphs:
+  - (Alright I have 30 minutes left. Time to question Chef Hardee)
+  speakerImages:
+  - {fileID: 5423477181114419476, guid: 036bdbbfac041c9459b6a1d02b37265f, type: 3}

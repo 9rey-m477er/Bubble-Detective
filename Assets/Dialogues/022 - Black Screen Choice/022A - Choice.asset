@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5813f23d117dc84db6d93450b04c609, type: 3}
+  m_Name: 022A - Choice
+  m_EditorClassIdentifier: 
+  speakerNames:
+  - Sol. Vedit
+  - Sol. Vedit
+  - Sol. Vedit
+  - Sol. Vedit
+  - Sol. Vedit
+  - Sol. Vedit
+  - Sol. Vedit
+  - Sol. Vedit
+  - Sol. Vedit
+  paragraphs:
+  - "(Alright. I don\u2019t have much time left. He\u2019s giving me one hour to
+    interrogate and make up my mind.)"
+  - '(I know I have 3 potential suspects: Dawn, Boil Hardee, and Bubba T.)'
+  - "(I already interviewed Dawn, so there\u2019s no need. So it\u2019s between the
+    other two.)"
+  - "(Boil Hardee has a temper and really didn\u2019t seem keen on the victim hanging
+    out with Bubbly Flay.)\r"
+  - (Did he kill out of pure rage?)
+  - (And Bubba T., who didn't like repeatedly losing to someone he saw as an amateur.)
+  - "(I mean fishing is Bubba\u2019s whole career and Bubba was known for winning
+    the competition every year until Popp showed up.)"
+  - (Did he kill out of jealousy?)
+  - (Either way, these two seem the most likely to be interrogated again.)
+  speakerImages:
+  - {fileID: 5423477181114419476, guid: 036bdbbfac041c9459b6a1d02b37265f, type: 3}
+  - {fileID: 5423477181114419476, guid: 036bdbbfac041c9459b6a1d02b37265f, type: 3}
+  - {fileID: 5423477181114419476, guid: 036bdbbfac041c9459b6a1d02b37265f, type: 3}
+  - {fileID: 5423477181114419476, guid: 036bdbbfac041c9459b6a1d02b37265f, type: 3}
+  - {fileID: 5423477181114419476, guid: 036bdbbfac041c9459b6a1d02b37265f, type: 3}
+  - {fileID: 5423477181114419476, guid: 036bdbbfac041c9459b6a1d02b37265f, type: 3}
+  - {fileID: 5423477181114419476, guid: 036bdbbfac041c9459b6a1d02b37265f, type: 3}
+  - {fileID: 5423477181114419476, guid: 036bdbbfac041c9459b6a1d02b37265f, type: 3}
+  - {fileID: 5423477181114419476, guid: 036bdbbfac041c9459b6a1d02b37265f, type: 3}

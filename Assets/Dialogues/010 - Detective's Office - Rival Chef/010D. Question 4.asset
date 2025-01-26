@@ -12,6 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5813f23d117dc84db6d93450b04c609, type: 3}
   m_Name: 010D. Question 4
   m_EditorClassIdentifier: 
-  speakerNames: []
-  paragraphs: []
-  speakerImages: []
+  speakerNames:
+  - Sol. Vedit
+  - Bubbly Flay
+  - Bubbly Flay
+  paragraphs:
+  - Could you tell me more about Chef Hardee's anger issues?
+  - I see him screaming at his employees from my shop, for one.
+  - I also heard he throws knives at a wall.
+  speakerImages:
+  - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
+  - {fileID: 1583726850231400584, guid: b9793e5175658c74a9b9b7a2a4aa2e48, type: 3}
+  - {fileID: 1583726850231400584, guid: b9793e5175658c74a9b9b7a2a4aa2e48, type: 3}

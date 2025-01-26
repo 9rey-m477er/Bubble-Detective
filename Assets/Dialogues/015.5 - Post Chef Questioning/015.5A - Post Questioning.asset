@@ -12,6 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5813f23d117dc84db6d93450b04c609, type: 3}
   m_Name: 015.5A - Post Questioning
   m_EditorClassIdentifier: 
-  speakerNames: []
-  paragraphs: []
-  speakerImages: []
+  speakerNames:
+  - Sol. Vedit
+  - Sol. Vedit
+  - Boil Hardee
+  - Sol. Vedit
+  paragraphs:
+  - (I think that's all the information I'll be able to get from this guy.)
+  - Thanks, Chef Hardee. I'll be in touch with you.
+  - I'm not clear of suspicion.
+  - Not yet. But I'm done with you for now. Take care.
+  speakerImages:
+  - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
+  - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
+  - {fileID: -2464623677970950858, guid: 55da0c6acb5620a488516e924488711f, type: 3}
+  - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}

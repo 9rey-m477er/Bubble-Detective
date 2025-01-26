@@ -12,6 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5813f23d117dc84db6d93450b04c609, type: 3}
   m_Name: 017A - Question 1
   m_EditorClassIdentifier: 
-  speakerNames: []
-  paragraphs: []
-  speakerImages: []
+  speakerNames:
+  - Sol. Vedit
+  - Dawn
+  - Dawn
+  - Sol. Vedit
+  - Dawn
+  paragraphs:
+  - How was Popp and Bubba's relationship?
+  - They were close friends by the looks of it.
+  - But they always got so competitive over the stupidest things.
+  - What stupid things are you referring to?
+  - The fishing competition that Popp wastes his time with winning.
+  speakerImages:
+  - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
+  - {fileID: -6956087720970070490, guid: 0f7c0eb09de6f1e449546f067221deb5, type: 3}
+  - {fileID: -6956087720970070490, guid: 0f7c0eb09de6f1e449546f067221deb5, type: 3}
+  - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
+  - {fileID: -6956087720970070490, guid: 0f7c0eb09de6f1e449546f067221deb5, type: 3}

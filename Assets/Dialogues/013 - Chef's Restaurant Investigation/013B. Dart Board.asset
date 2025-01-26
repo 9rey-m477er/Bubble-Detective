@@ -12,6 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5813f23d117dc84db6d93450b04c609, type: 3}
   m_Name: 013B. Dart Board
   m_EditorClassIdentifier: 
-  speakerNames: []
-  paragraphs: []
-  speakerImages: []
+  speakerNames:
+  - Sol. Vedit
+  - Sol. Vedit
+  - Boil Hardee
+  paragraphs:
+  - (This dartboard has Chef Flay's face on it and knives stuck through it.)
+  - What's going on with the dart board? Do you have a grudge against Chef Flay?
+  - Screw him! And that's all I'm saying.
+  speakerImages:
+  - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
+  - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
+  - {fileID: -2464623677970950858, guid: 55da0c6acb5620a488516e924488711f, type: 3}

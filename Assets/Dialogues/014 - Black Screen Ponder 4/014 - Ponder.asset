@@ -12,6 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5813f23d117dc84db6d93450b04c609, type: 3}
   m_Name: 014 - Ponder
   m_EditorClassIdentifier: 
-  speakerNames: []
-  paragraphs: []
-  speakerImages: []
+  speakerNames:
+  - Sol. Vedit
+  - Sol. Vedit
+  - Sol. Vedit
+  - Boil Hardee
+  - Sol. Vedit
+  paragraphs:
+  - (Ok, I gathered everything here but I need to have Chef Hardee come down to the
+    station.)
+  - (The anger and dart board really tipped me off.)
+  - Ok, Chef, I'm gonna need you to come with me.
+  - The hell? Why?!
+  - Don't make this harder than it needs to be.
+  speakerImages:
+  - {fileID: 5423477181114419476, guid: 036bdbbfac041c9459b6a1d02b37265f, type: 3}
+  - {fileID: 5423477181114419476, guid: 036bdbbfac041c9459b6a1d02b37265f, type: 3}
+  - {fileID: 5423477181114419476, guid: 036bdbbfac041c9459b6a1d02b37265f, type: 3}
+  - {fileID: 5423477181114419476, guid: 036bdbbfac041c9459b6a1d02b37265f, type: 3}
+  - {fileID: 5423477181114419476, guid: 036bdbbfac041c9459b6a1d02b37265f, type: 3}

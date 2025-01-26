@@ -12,6 +12,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5813f23d117dc84db6d93450b04c609, type: 3}
   m_Name: 019A - Question 1
   m_EditorClassIdentifier: 
-  speakerNames: []
-  paragraphs: []
-  speakerImages: []
+  speakerNames:
+  - Sol. Vedit
+  - Dawn
+  - Sol. Vedit
+  - Dawn
+  - Sol. Vedit
+  - Dawn
+  - Dawn
+  - Dawn
+  - Dawn
+  paragraphs:
+  - Please tell me more about your relationship with the victim.
+  - Why am I in here? My husband is dead! Let me out of here!
+  - Tell me more about your relationship!
+  - I hate him, okay!? Our marriage has been rocky for 2 years now.
+  - What do you mean by "rocky"?
+  - We rarely saw each other due to work, and when we did, it wouldn't be long before
+    we started screaming at each other.
+  - He also has no consideration for the fact that I work late.
+  - "He comes home all loud which wakes me up when I\u2019m trying to get some sleep
+    before working the night shift.\r\n"
+  - "At least I\u2019ll finally get some peace and quiet."
+  speakerImages:
+  - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
+  - {fileID: -6956087720970070490, guid: 0f7c0eb09de6f1e449546f067221deb5, type: 3}
+  - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
+  - {fileID: -6956087720970070490, guid: 0f7c0eb09de6f1e449546f067221deb5, type: 3}
+  - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
+  - {fileID: -6956087720970070490, guid: 0f7c0eb09de6f1e449546f067221deb5, type: 3}
+  - {fileID: -6956087720970070490, guid: 0f7c0eb09de6f1e449546f067221deb5, type: 3}
+  - {fileID: -6956087720970070490, guid: 0f7c0eb09de6f1e449546f067221deb5, type: 3}
+  - {fileID: -6956087720970070490, guid: 0f7c0eb09de6f1e449546f067221deb5, type: 3}

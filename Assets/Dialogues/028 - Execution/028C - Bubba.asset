@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5813f23d117dc84db6d93450b04c609, type: 3}
+  m_Name: 028C - Bubba
+  m_EditorClassIdentifier: 
+  speakerNames:
+  - Sol. Vedit
+  - Sol. Vedit
+  - Sol. Vedit
+  - Sol. Vedit
+  - Sol. Vedit
+  - Sol. Vedit
+  - Sol. Vedit
+  - Sol. Vedit
+  - Sol. Vedit
+  - Sol. Vedit
+  - Sol. Vedit
+  paragraphs:
+  - Bubba T. was arrested and executed.
+  - He basked in the spotlight, the fame, the glory.
+  - "Fishing was his life. You\u2019d find him at the lake every day, casting his
+    line like it was a performance for an adoring crowd.\r\n"
+  - The competitions? They were just the cherry on top.
+  - "Then Popp showed up. No experience, no reputation\u2014just raw talent."
+  - He came outta nowhere and reeled in victory after victory, leaving Bubba in his
+    wake.
+  - "Ten years of losses piled up, and Bubba watched his spotlight dim, replaced
+    by Poppa\u2019s shine."
+  - That jealousy? It started as a ripple, but it grew into a wave that finally dragged
+    Bubba under.
+  - "When Bubba snapped, he didn\u2019t just lose his temper\u2014he lost his soul."
+  - "Fame, power, pride\u2014it all went to his head and drove him to murder."
+  - "Now, Bubba\u2019s fame has officially gone down the drain. This was the catch
+    of the century."
+  speakerImages:
+  - {fileID: 5423477181114419476, guid: 036bdbbfac041c9459b6a1d02b37265f, type: 3}
+  - {fileID: 5423477181114419476, guid: 036bdbbfac041c9459b6a1d02b37265f, type: 3}
+  - {fileID: 5423477181114419476, guid: 036bdbbfac041c9459b6a1d02b37265f, type: 3}
+  - {fileID: 5423477181114419476, guid: 036bdbbfac041c9459b6a1d02b37265f, type: 3}
+  - {fileID: 5423477181114419476, guid: 036bdbbfac041c9459b6a1d02b37265f, type: 3}
+  - {fileID: 5423477181114419476, guid: 036bdbbfac041c9459b6a1d02b37265f, type: 3}
+  - {fileID: 5423477181114419476, guid: 036bdbbfac041c9459b6a1d02b37265f, type: 3}
+  - {fileID: 5423477181114419476, guid: 036bdbbfac041c9459b6a1d02b37265f, type: 3}
+  - {fileID: 5423477181114419476, guid: 036bdbbfac041c9459b6a1d02b37265f, type: 3}
+  - {fileID: 5423477181114419476, guid: 036bdbbfac041c9459b6a1d02b37265f, type: 3}
+  - {fileID: 5423477181114419476, guid: 036bdbbfac041c9459b6a1d02b37265f, type: 3}

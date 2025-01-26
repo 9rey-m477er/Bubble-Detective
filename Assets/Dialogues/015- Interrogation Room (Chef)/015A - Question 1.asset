@@ -12,6 +12,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5813f23d117dc84db6d93450b04c609, type: 3}
   m_Name: 015A - Question 1
   m_EditorClassIdentifier: 
-  speakerNames: []
-  paragraphs: []
-  speakerImages: []
+  speakerNames:
+  - Sol. Vedit
+  - Boil Hardee
+  - Sol. Vedit
+  - Sol. Vedit
+  - Boil Hardee
+  - Sol. Vedit
+  - Boil Hardee
+  - Boil Hardee
+  paragraphs:
+  - Where were you at 8 PM?
+  - I was closing up shop.
+  - Really? That's not what Chef Flay was saying.
+  - He said he saw you leave shortly after your friend left his shop.
+  - '!!'
+  - So you did leave your shop. Why?
+  - I was mad that Popp went to Chef Flay, knowing I can't stand the guy.
+  - Went over to talk to him about it, but in the end, it didn't matter. We're good
+    now.
+  speakerImages:
+  - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
+  - {fileID: -2464623677970950858, guid: 55da0c6acb5620a488516e924488711f, type: 3}
+  - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
+  - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
+  - {fileID: -2464623677970950858, guid: 55da0c6acb5620a488516e924488711f, type: 3}
+  - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
+  - {fileID: -2464623677970950858, guid: 55da0c6acb5620a488516e924488711f, type: 3}
+  - {fileID: -2464623677970950858, guid: 55da0c6acb5620a488516e924488711f, type: 3}

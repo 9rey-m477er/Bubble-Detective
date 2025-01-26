@@ -12,6 +12,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5813f23d117dc84db6d93450b04c609, type: 3}
   m_Name: 006B. Neighbor2
   m_EditorClassIdentifier: 
-  speakerNames: []
-  paragraphs: []
-  speakerImages: []
+  speakerNames:
+  - Sol. Vedit
+  - Neighbor
+  - Neighbor
+  - Sol. Vedit
+  - Neighbor
+  - Neighbor
+  - Sol. Vedit
+  - Neighbor
+  - Sol. Vedit
+  - Sol. Vedit
+  - Neighbor
+  paragraphs:
+  - What's your relationship like with the victim?
+  - Not the best. He and Dawn had fights almost every night, keeping me up.
+  - I used to go to bed at midnight but now I go to bed around 8 PM to get some sleep
+    before being woken up by their argument.
+  - Have you spoken to them about it?
+  - Only the wife.
+  - Though what she said was rather odd.
+  - What did she say?
+  - She mentioned how she hated Popp and said she was going to get rid of him one
+    way or another.
+  - (Interesting)
+  - Well that's all I have. You're free to go.
+  - Finally, thank you, detective.
+  speakerImages:
+  - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
+  - {fileID: 1427575840990723373, guid: 93a0c1e448a707a40a1dfd4614474229, type: 3}
+  - {fileID: 1427575840990723373, guid: 93a0c1e448a707a40a1dfd4614474229, type: 3}
+  - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
+  - {fileID: 1427575840990723373, guid: 93a0c1e448a707a40a1dfd4614474229, type: 3}
+  - {fileID: 1427575840990723373, guid: 93a0c1e448a707a40a1dfd4614474229, type: 3}
+  - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
+  - {fileID: 1427575840990723373, guid: 93a0c1e448a707a40a1dfd4614474229, type: 3}
+  - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
+  - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
+  - {fileID: 1427575840990723373, guid: 93a0c1e448a707a40a1dfd4614474229, type: 3}

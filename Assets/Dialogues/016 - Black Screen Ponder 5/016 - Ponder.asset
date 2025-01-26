@@ -12,6 +12,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5813f23d117dc84db6d93450b04c609, type: 3}
   m_Name: 016 - Ponder
   m_EditorClassIdentifier: 
-  speakerNames: []
-  paragraphs: []
-  speakerImages: []
+  speakerNames:
+  - Sol. Vedit
+  - Sol. Vedit
+  - Sol. Vedit
+  - Sol. Vedit
+  - Sol. Vedit
+  - Sol. Vedit
+  - Sol. Vedit
+  - Sol. Vedit
+  - Sol. Vedit
+  - Sol. Vedit
+  paragraphs:
+  - (Well I learned a part of why Chef Hardee is so angry.)
+  - (So Chef Flay was an employee at his restaurant. They got into it and Flay opened
+    his own place.)
+  - (But why did Hardee lie about his whereabouts?)
+  - (Plus the fact that he was mad about his friend going to Flay's shop.)
+  - (He said they were good, but with his anger issues, was he really?)
+  - (And with Bubba T., he didn't seem to like the victim as much after losing to
+    him 10 times in a row.)
+  - The wife said he had been fishing for years compared to Popp's once a year of
+    fishing for 10 years.
+  - (Dawn sounds like she knows Chef Hardee and Bubba T. so maybe she could provide
+    more info on those two.)
+  - (Maybe even herself. She didn't care about Popp's death. The neighbor even said
+    they got into fights.)
+  - (I should call her into my office.)
+  speakerImages:
+  - {fileID: 5423477181114419476, guid: 036bdbbfac041c9459b6a1d02b37265f, type: 3}
+  - {fileID: 5423477181114419476, guid: 036bdbbfac041c9459b6a1d02b37265f, type: 3}
+  - {fileID: 5423477181114419476, guid: 036bdbbfac041c9459b6a1d02b37265f, type: 3}
+  - {fileID: 5423477181114419476, guid: 036bdbbfac041c9459b6a1d02b37265f, type: 3}
+  - {fileID: 5423477181114419476, guid: 036bdbbfac041c9459b6a1d02b37265f, type: 3}
+  - {fileID: 5423477181114419476, guid: 036bdbbfac041c9459b6a1d02b37265f, type: 3}
+  - {fileID: 5423477181114419476, guid: 036bdbbfac041c9459b6a1d02b37265f, type: 3}
+  - {fileID: 5423477181114419476, guid: 036bdbbfac041c9459b6a1d02b37265f, type: 3}
+  - {fileID: 5423477181114419476, guid: 036bdbbfac041c9459b6a1d02b37265f, type: 3}
+  - {fileID: 5423477181114419476, guid: 036bdbbfac041c9459b6a1d02b37265f, type: 3}

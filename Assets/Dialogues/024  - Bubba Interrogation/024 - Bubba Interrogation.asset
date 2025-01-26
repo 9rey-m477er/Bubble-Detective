@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5813f23d117dc84db6d93450b04c609, type: 3}
+  m_Name: 024 - Bubba Interrogation
+  m_EditorClassIdentifier: 
+  speakerNames:
+  - Sol. Vedit
+  - Bubba T.
+  - Sol. Vedit
+  - Bubba T.
+  - Sol. Vedit
+  - Bubba T.
+  - Sol. Vedit
+  - Bubba T.
+  - Sol. Vedit
+  paragraphs:
+  - What time did you return the victim's jacket?
+  - 7:30
+  - Could you explain why the victim's wife saw you in the neighborhood around 7:00?
+  - I don't know why she'd say that. I dropped anchor at 7:30 sharp.
+  - Did you kill Popp Ed?
+  - "Nah, we\u2019ve had our fair share of rough waters, sure\u2014but I\u2019d never
+    sink him."
+  - Why should I believe you?
+  - "Why would I kill him over some dumb fishing competition? It ain\u2019t like
+    I ever win \u2019em, anyway."
+  - Alright, thank you.
+  speakerImages:
+  - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
+  - {fileID: 7924345146234068265, guid: 4422568c6b001e54e9c861cc1ddedfe5, type: 3}
+  - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
+  - {fileID: 7924345146234068265, guid: 4422568c6b001e54e9c861cc1ddedfe5, type: 3}
+  - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
+  - {fileID: 7924345146234068265, guid: 4422568c6b001e54e9c861cc1ddedfe5, type: 3}
+  - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
+  - {fileID: 7924345146234068265, guid: 4422568c6b001e54e9c861cc1ddedfe5, type: 3}
+  - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}

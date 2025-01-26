@@ -12,6 +12,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5813f23d117dc84db6d93450b04c609, type: 3}
   m_Name: 006A. Neighbor
   m_EditorClassIdentifier: 
-  speakerNames: []
-  paragraphs: []
-  speakerImages: []
+  speakerNames:
+  - Sol. Vedit
+  - Sol. Vedit
+  - Neighbor
+  - Sol. Vedit
+  - Neighbor
+  - Sol. Vedit
+  - Sol. Vedit
+  - Neighbor
+  - Sol. Vedit
+  - Neighbor
+  paragraphs:
+  - (Well, I gathered all the evidence from here. I'm going to talk to the neighbor
+    before I leave here.)
+  - Excuse me, sir.
+  - Why am I even here, detective?
+  - Did the police wake you up?
+  - Yes. I was enjoying a good sleep before I heard pounding on my door.
+  - Sorry, I'll make it quick.
+  - Where were you last night?
+  - I was sleeping at home.
+  - Did you see the victim at all yesterday?
+  - I saw him leave in the morning for the fishing competition at 9 and saw him returning
+    at 5.
+  speakerImages:
+  - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
+  - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
+  - {fileID: 1427575840990723373, guid: 93a0c1e448a707a40a1dfd4614474229, type: 3}
+  - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
+  - {fileID: 1427575840990723373, guid: 93a0c1e448a707a40a1dfd4614474229, type: 3}
+  - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
+  - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
+  - {fileID: 1427575840990723373, guid: 93a0c1e448a707a40a1dfd4614474229, type: 3}
+  - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
+  - {fileID: 1427575840990723373, guid: 93a0c1e448a707a40a1dfd4614474229, type: 3}

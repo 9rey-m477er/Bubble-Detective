@@ -12,6 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5813f23d117dc84db6d93450b04c609, type: 3}
   m_Name: 010C. Question 3
   m_EditorClassIdentifier: 
-  speakerNames: []
-  paragraphs: []
-  speakerImages: []
+  speakerNames:
+  - Sol. Vedit
+  - Bubbly Flay
+  - Bubbly Flay
+  - Bubbly Flay
+  paragraphs:
+  - What can you tell me about Chef Boil Dee?
+  - Well, he's a hot head for sure.
+  - We've been rivals for years. He's always strived to take my business down.
+  - I'll admit I admire his tenacity, but his anger problems will be his downfall.
+  speakerImages:
+  - {fileID: 8298030627715949271, guid: 6e1f911bab2947c4b98bc54e470ba41d, type: 3}
+  - {fileID: 1583726850231400584, guid: b9793e5175658c74a9b9b7a2a4aa2e48, type: 3}
+  - {fileID: 1583726850231400584, guid: b9793e5175658c74a9b9b7a2a4aa2e48, type: 3}
+  - {fileID: 1583726850231400584, guid: b9793e5175658c74a9b9b7a2a4aa2e48, type: 3}
