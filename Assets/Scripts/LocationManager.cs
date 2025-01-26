@@ -4,6 +4,7 @@ using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using UnityEditor.Rendering;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using static UnityEditor.FilePathAttribute;
@@ -20,10 +21,10 @@ public class LocationManager : MonoBehaviour
     private bool isDialogueOpen = false;
 
     //HouseInvest
-    private bool missKnife, body, beer, hook, jacket;
+    public bool missKnife, body, beer, hook, jacket;
 
     //ChefInvest
-    private bool foundKnife, dart, picture;
+    public bool foundKnife, dart, picture;
 
     //FishInter
     private bool fishQ1, fishQ2, fishQ3, fishQ4, fishQ5;
@@ -48,7 +49,7 @@ public class LocationManager : MonoBehaviour
 
     public GameObject menuCanvas;
     public GameObject gameCanvas;
-
+    public Button ContinueButton;
     public LocationObject l;
     public DialogueText t;
 
@@ -63,9 +64,12 @@ public class LocationManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            if (isDialogueOpen)
+            if (!l.isInvest && !l.isQuest)
             {
-                advanceDialogue(t);
+                if (isDialogueOpen)
+                {
+                    advanceDialogue(t);
+                }
             }
         }
     }
@@ -91,10 +95,11 @@ public class LocationManager : MonoBehaviour
         l = locationObjects.Dequeue();
         if (l.isInvest)
         {
+            Debug.Log("is invest");
             wideBackground.gameObject.SetActive(true);
             narrowBackground.gameObject.SetActive(false);
             wideBackground.sprite = l.background;
-            loadInvestigateRoom();
+            loadInvestigateRoom(l);
         }
         else if (l.isQuest)
         {
@@ -178,8 +183,67 @@ public class LocationManager : MonoBehaviour
 
     }
 
-    private void loadInvestigateRoom()
+    private void loadInvestigateRoom(LocationObject location)
     {
-
+        dialogueController.EndConversation();
     }
+
+    public void EvidenceHandler() //buttons call this
+    {
+        GameObject clickedButton = EventSystem.current.currentSelectedGameObject;
+        string buttonName = clickedButton.name;
+        string testName = l.name;
+        switch (buttonName)
+        {
+            case "MissingKnifeButton":
+                missKnife = true;
+                break;
+            case "BodyButton":
+                body = true;
+                break;
+            case "HookButton":
+                hook = true;
+                break;
+            case "BeerButton":
+                beer = true;
+                break;
+            case "JacketButton":
+                jacket = true;
+                break;
+            //------
+            case "FoundKnifeButton":
+                foundKnife = true;
+                break;
+            case "DartButton":
+                dart = true;
+                break;
+            case "PhotoButton":
+                picture = true;
+                break;
+        }
+        //Debug.Log(testName);
+        if (l.name == "Popp's House")
+        {
+            if (missKnife == true && body == true && beer == true && hook == true && jacket == true)
+            {
+                Debug.Log("house done");
+                ContinueButton.gameObject.SetActive(true);
+            }
+        }
+        if (l.name == "Chef's Kitchen")
+        {
+            if (foundKnife == true && dart == true && picture == true)
+            {
+                Debug.Log("Chef done");
+                ContinueButton.gameObject.SetActive(true);
+            }
+        }
+    }
+
+    public void Continue()
+    {
+        advanceLocation();
+        ContinueButton.gameObject.SetActive(false);
+    }
+
 }

@@ -16,4 +16,4 @@ MonoBehaviour:
   background: {fileID: 21300000, guid: 402b9f6439cb911438dd5d92d2f91dfc, type: 3}
   nextLocation: {fileID: 11400000, guid: 1c9f43098b67ad447ad9171abb51d843, type: 2}
   isInvest: 0
-  isQuest: 1
+  isQuest: 0
