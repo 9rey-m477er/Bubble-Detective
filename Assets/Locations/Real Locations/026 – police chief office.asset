@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c42d4f2e835f6874bba65344be3e888e, type: 3}
+  m_Name: "026 \u2013 police chief office"
+  m_EditorClassIdentifier: 
+  dialogues: []
+  background: {fileID: 21300000, guid: 402b9f6439cb911438dd5d92d2f91dfc, type: 3}
+  nextLocation: {fileID: 11400000, guid: 1c9f43098b67ad447ad9171abb51d843, type: 2}
+  isInvest: 0
+  isQuest: 1
