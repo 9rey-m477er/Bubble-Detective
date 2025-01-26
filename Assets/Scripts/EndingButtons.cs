@@ -8,6 +8,8 @@ using UnityEngine.UI;
 public class EndingButtons : MonoBehaviour
 {
     public LocationManager LocationManager;
+    public LocationObject goodEnding, badEnding;
+    private LocationObject chosenEnding;
     public GameObject goodAssets;
     public GameObject badAssets;
     public GameObject buttons;
@@ -36,17 +38,19 @@ public class EndingButtons : MonoBehaviour
 
         if(continue1 == true)
         {
-            LocationManager.advanceDialogue();
+            LocationManager.addEndgameToQueue(chosenEnding);
         }
     }
 
     public void badOption()
     {
+        chosenEnding = badEnding;
         StartCoroutine(fadeBad());
     }
 
     public void goodOption()
     {
+        chosenEnding = goodEnding;
         StartCoroutine(fadeGood());
     }
 

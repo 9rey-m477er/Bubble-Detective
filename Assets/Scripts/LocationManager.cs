@@ -20,6 +20,7 @@ public class LocationManager : MonoBehaviour
     public ClickHandler clickHandler;
     private bool dialoguesFinished = false;
     private bool isDialogueOpen = false;
+    private bool hasEpilogueStarted = false;
 
     public Button executeDawn;
     public Button executeBubba;
@@ -183,8 +184,19 @@ public class LocationManager : MonoBehaviour
         }
     }
 
+    public void addEndgameToQueue(LocationObject location)
+    {
+        locationObjects.Enqueue(location);
+        advanceLocation();
+    }
+
     private void endGame()
     {
+        if (!hasEpilogueStarted)
+        {
+            hasEpilogueStarted = true;
+
+        }
         SceneManager.LoadScene("Build");
     }
 
