@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c42d4f2e835f6874bba65344be3e888e, type: 3}
   m_Name: 015.5 - Post Questioning Boil
   m_EditorClassIdentifier: 
-  dialogues: []
+  dialogues:
+  - {fileID: 11400000, guid: 55542bc31ec20de478586aa2a76d02dd, type: 2}
   background: {fileID: 21300000, guid: 94aa9a0cc7700884794a1bd2fdb52c0d, type: 3}
   nextLocation: {fileID: 0}
   isInvest: 0

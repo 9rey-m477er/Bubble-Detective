@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogues:
   - {fileID: 11400000, guid: 3cad882359189af4ea4ba33b5bd6a6cb, type: 2}
-  background: {fileID: 0}
+  background: {fileID: 21300000, guid: 94aa9a0cc7700884794a1bd2fdb52c0d, type: 3}
   nextLocation: {fileID: 0}
   isInvest: 0
   isQuest: 0
