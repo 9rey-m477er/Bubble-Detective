@@ -8,6 +8,7 @@ public class ClickHandler : MonoBehaviour
     [SerializeField] private LocationObject location;
     public bool isDialogueOpen = false;
     public bool isQuestionOpen = false;
+    public GameObject questionSpace;
     private DialogueText currentText = null;
 
     public void OnDialogueClickInvest(DialogueText text) //invest
@@ -30,14 +31,17 @@ public class ClickHandler : MonoBehaviour
     //-----------------------------------------------------------
     public void OnDialogueClickQuestion(DialogueText text) //questioning
     {
+        Debug.Log("Location is " + location.name);
         if (!isQuestionOpen)
         {
+            questionSpace.SetActive(false);
             isQuestionOpen = true;
             currentText = text;
         }
         if (dialogueController.conversationEnded)
         {
             isQuestionOpen = false;
+            questionSpace.SetActive(true);
             dialogueController.EndConversation();
         }
         else

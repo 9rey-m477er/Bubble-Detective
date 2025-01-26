@@ -4,6 +4,7 @@ using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using UnityEditor.Rendering;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using static UnityEditor.FilePathAttribute;
@@ -19,12 +20,17 @@ public class LocationManager : MonoBehaviour
     private bool dialoguesFinished = false;
     private bool isDialogueOpen = false;
 
+    public GameObject questionSpace, testQ, fishQ, rivalQ, chefQ, spouse1Q, spouse2Q, chefFQ, fishFQ;
+
     //HouseInvest
     private bool missKnife, body, beer, hook, jacket;
 
     //ChefInvest
     private bool foundKnife, dart, picture;
 
+    //TestInter
+    public bool testQ1, testQ2, testQ3;
+    
     //FishInter
     private bool fishQ1, fishQ2, fishQ3, fishQ4, fishQ5;
 
@@ -63,9 +69,12 @@ public class LocationManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            if (isDialogueOpen)
+            if (!l.isInvest && !l.isQuest)
             {
-                advanceDialogue(t);
+                if (isDialogueOpen)
+                {
+                    advanceDialogue(t);
+                }
             }
         }
     }
@@ -94,14 +103,14 @@ public class LocationManager : MonoBehaviour
             wideBackground.gameObject.SetActive(true);
             narrowBackground.gameObject.SetActive(false);
             wideBackground.sprite = l.background;
-            loadInvestigateRoom();
+            loadInvestigateRoom(l);
         }
         else if (l.isQuest)
         {
             narrowBackground.gameObject.SetActive(true);
             wideBackground.gameObject.SetActive(false);
             narrowBackground.sprite = l.background;
-            loadQuestionRoom();
+            loadQuestionRoom(l);
         }
         else
         {
@@ -173,12 +182,51 @@ public class LocationManager : MonoBehaviour
         SceneManager.LoadScene("Build");
     }
 
-    private void loadQuestionRoom()
+    private void loadQuestionRoom(LocationObject location)
     {
-
+        dialogueController.EndConversation();
+        questionSpace.SetActive(true);
+        switch (location.name)
+        {
+            case "TestInter":
+                break;
+        }
     }
 
-    private void loadInvestigateRoom()
+    public void checkQuestionClick()
+    {
+        GameObject clickedButton = EventSystem.current.currentSelectedGameObject;
+        string buttonName = clickedButton.name;
+
+        switch (buttonName)
+        {
+            case "TopButton":
+                testQ1 = true;
+                break;
+            case "MiddleButton":
+                testQ2 = true;
+                break;
+            case "BottomButton":
+                testQ3 = true;
+                break;
+            default:
+                break;
+        }
+        switch (l.name)
+        {
+            case "TestInter1":
+                if (testQ1 && testQ2 && testQ3)
+                {
+                    Debug.Log("I'm Done Now");
+                    return;
+                }
+                break;
+            default:
+                break;
+        }
+    }
+
+    private void loadInvestigateRoom(LocationObject location)
     {
 
     }
