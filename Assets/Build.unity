@@ -4263,7 +4263,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &405507588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7856,7 +7856,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &903883630
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8930,7 +8930,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &984126492
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8945,8 +8945,8 @@ RectTransform:
   m_Children:
   - {fileID: 360196175}
   - {fileID: 903883630}
-  - {fileID: 1864699245}
   - {fileID: 1345662363}
+  - {fileID: 1864699245}
   - {fileID: 42161678}
   - {fileID: 1187100042}
   m_Father: {fileID: 405507591}
@@ -10293,7 +10293,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1132996394
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13981,7 +13981,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1864699245
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13998,7 +13998,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.23, y: -44}
+  m_AnchoredPosition: {x: -2.23, y: -18}
   m_SizeDelta: {x: 507.07, y: 359.33}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1864699246
@@ -14029,15 +14029,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'SOURCES:
-
-
-    blah blah
-
-    blah
-
-
-    blah'
+  m_text: "SOURCES:\nSFX:\r\n\nHorror Stinger 12.wav and Horror Stinger 4.wav by
+    F.M.Audio -- https://freesound.org/s/614717/ --https://freesound.org/s/614716\n--
+    License: Attribution 4.0\n\nphone cordless ring roomy clean.flac by kyles\r\n--
+    https://freesound.org/s/637749/ -- License: Creative Commons 0\r\n\r\nBubblePop
+    SFX by sarooptech --\nhttps://freesound.org/s/718438/ -- License: Creative\r\n   
+    Commons 0\n\nColor Schemes:\r\nColormagic.app\r\n\nFish Image:\r\nFreepik - mrsiraphol\n\nImportant
+    Image:\nThe0ddsAreAgainstMe - Reddit\n\nBugfixing:\r\nChatGPT"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e7866a88466ee394a942f1c4b5ff1715, type: 2}
   m_sharedMaterial: {fileID: -4211338211045025501, guid: e7866a88466ee394a942f1c4b5ff1715, type: 2}
@@ -14064,8 +14062,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
-  m_fontSizeBase: 25
+  m_fontSize: 14.5
+  m_fontSizeBase: 14.5
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -14128,7 +14126,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1900725047
 MonoBehaviour:
   m_ObjectHideFlags: 0
