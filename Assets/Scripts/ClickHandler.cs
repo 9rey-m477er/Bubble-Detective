@@ -7,9 +7,10 @@ public class ClickHandler : MonoBehaviour
     [SerializeField] private DialogueController dialogueController;
     [SerializeField] private LocationObject location;
     public bool isDialogueOpen = false;
+    public bool isQuestionOpen = false;
     private DialogueText currentText = null;
 
-    public void OnDialogueClick(DialogueText text)
+    public void OnDialogueClickInvest(DialogueText text) //invest
     {
         if (!isDialogueOpen)
         {
@@ -26,13 +27,44 @@ public class ClickHandler : MonoBehaviour
             dialogueController.displayNextParagraph(text);
         }
     }
+    //-----------------------------------------------------------
+    public void OnDialogueClickQuestion(DialogueText text) //questioning
+    {
+        if (!isQuestionOpen)
+        {
+            isQuestionOpen = true;
+            currentText = text;
+        }
+        if (dialogueController.conversationEnded)
+        {
+            isQuestionOpen = false;
+            dialogueController.EndConversation();
+        }
+        else
+        {
+            dialogueController.displayNextParagraph(text);
+        }
+    }
+    //------------------------------------------------------------------------------------------
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Mouse0))
-        {
-            if (isDialogueOpen)
+        {          
+            if (location.isInvest == true)
             {
-                OnDialogueClick(currentText);
+                if (isDialogueOpen)
+                {
+                    Debug.Log("isInvest true");
+                    OnDialogueClickInvest(currentText);
+                }
+            }
+            else if(location.isQuest == true)
+            {
+                if (isQuestionOpen)
+                {
+                    Debug.Log("isquest true");
+                    OnDialogueClickQuestion(currentText);
+                }
             }
         }
     }

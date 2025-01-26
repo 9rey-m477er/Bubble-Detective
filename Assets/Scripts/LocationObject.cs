@@ -9,4 +9,6 @@ public class LocationObject : ScriptableObject
     public List<DialogueText> dialogues;
     public Sprite background;
     public LocationObject nextLocation;
+    public bool isInvest;
+    public bool isQuest;
 }
