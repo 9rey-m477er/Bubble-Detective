@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
-    public AudioSource AS, Music;
+    public AudioSource AS, Music1, Music2, Music3;
     public AudioClip Pop1, Pop2, Pop3, Pop4, Pop5, Pop6, Phone, Thud1, Thud2;
 
     public float maxVol;
@@ -43,15 +43,32 @@ public class SoundManager : MonoBehaviour
         }
     }
 
-    public void PlaySpecificClip(AudioClip ac)
+
+    public IEnumerator FadeOutMusic(AudioSource musicSource, System.Action onFadeComplete = null, float duration = 1f)
     {
-        AS.PlayOneShot(ac);
+        float startVolume = musicSource.volume;
+
+        while (musicSource.volume > 0)
+        {
+            musicSource.volume -= startVolume * Time.deltaTime / duration;
+            yield return null;
+        }
+
+        musicSource.Stop();
+        //onFadeComplete?.Invoke(); // Trigger callback after fading out
     }
 
-    public void ChangeMusic(AudioClip ac)
+    public IEnumerator FadeInMusic(AudioSource musicSource, float duration = 1f)
     {
-        Music.Stop();
-        Music.clip = ac;
-        Music.PlayDelayed(0.5f);
+        musicSource.volume = 0f;
+        musicSource.Play();
+
+        while (musicSource.volume < maxVol)
+        {
+            musicSource.volume += maxVol * Time.deltaTime / duration;
+            yield return null;
+        }
+
+        musicSource.volume = maxVol; // Ensure volume is at max after fading in
     }
 }

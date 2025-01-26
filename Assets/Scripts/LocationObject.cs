@@ -13,4 +13,5 @@ public class LocationObject : ScriptableObject
     public bool isQuest;
     public bool isMusicChanging;
     public AudioClip newMusic = null;
+    public int currentTrack;
 }

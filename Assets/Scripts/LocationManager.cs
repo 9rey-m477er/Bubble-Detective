@@ -6,6 +6,7 @@ using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
+using UnityEngine.Timeline;
 using UnityEngine.UI;
 //using static UnityEditor.FilePathAttribute;
 
@@ -16,6 +17,7 @@ public class LocationManager : MonoBehaviour
     public Image narrowBackground;
     public Image wideBackground;
     public DialogueController dialogueController;
+    public SoundManager soundManager;
     public LocationObject[] locations;
     public ClickHandler clickHandler;
     private bool dialoguesFinished = false;
@@ -25,6 +27,11 @@ public class LocationManager : MonoBehaviour
     public Button executeDawn;
     public Button executeBubba;
     public Button executeBoil;
+
+    public AudioSource DetectiveTheme1;
+    public AudioSource Interview2;
+    public AudioSource Interrogation3;
+
 
     public GameObject questionSpace, testQ, fishQ, rivalQ, chefQ, spouse1Q, spouse2Q, chefFQ, fishFQ, houseEv, chefEv;
 
@@ -96,6 +103,10 @@ public class LocationManager : MonoBehaviour
 
     private void advanceLocation()
     {
+        if (l.isMusicChanging == true)
+        {
+            updateMusic();
+        }
 
         if (locationObjects.Count == 0)
         {
@@ -322,6 +333,39 @@ public class LocationManager : MonoBehaviour
         chefEv.SetActive(false);
         questionSpace.SetActive(false);
         ContinueButton.gameObject.SetActive(false);
+    }
+
+    public void updateMusic()
+    {
+        if(l.currentTrack == 1)
+        {
+            fadeMusicOut(Interrogation3);
+            fadeMusicOut(Interview2);
+            fadeMusicIn(DetectiveTheme1);
+        }
+        if(l.currentTrack == 2)
+        {
+            fadeMusicOut(Interrogation3);
+            fadeMusicOut(DetectiveTheme1);
+            fadeMusicIn(Interview2);
+        }
+        if(l.currentTrack == 3)
+        {
+            fadeMusicOut(DetectiveTheme1);
+            fadeMusicOut(Interview2);
+            fadeMusicIn(Interrogation3);
+        }
+    }
+
+
+    public void fadeMusicOut(AudioSource audioSource)
+    {
+        StartCoroutine(soundManager.FadeInMusic(audioSource));
+    }
+
+    public void fadeMusicIn(AudioSource audioSource)
+    {
+        StartCoroutine(soundManager.FadeOutMusic(audioSource));
     }
 
 }
