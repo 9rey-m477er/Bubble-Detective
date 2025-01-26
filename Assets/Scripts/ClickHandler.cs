@@ -66,7 +66,7 @@ public class ClickHandler : MonoBehaviour
             {
                 if (isQuestionOpen)
                 {
-                    Debug.Log("isquest true");
+                    Debug.Log("isQuest true");
                     OnDialogueClickQuestion(currentText);
                 }
             }
