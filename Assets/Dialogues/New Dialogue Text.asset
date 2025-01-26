@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: New Dialogue Text
   m_EditorClassIdentifier: 
   speakerNames: []
-  paragraphs: []
+  paragraphs:
+  - 
   speakerImages: []

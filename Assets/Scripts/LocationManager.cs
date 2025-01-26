@@ -21,6 +21,10 @@ public class LocationManager : MonoBehaviour
     private bool dialoguesFinished = false;
     private bool isDialogueOpen = false;
 
+    public Button executeDawn;
+    public Button executeBubba;
+    public Button executeBoil;
+
     public GameObject questionSpace, testQ, fishQ, rivalQ, chefQ, spouse1Q, spouse2Q, chefFQ, fishFQ, houseEv, chefEv;
 
     //HouseInvest
@@ -132,7 +136,7 @@ public class LocationManager : MonoBehaviour
         }        
     }
 
-    private void loadNextDialogue(LocationObject location)
+    public void loadNextDialogue(LocationObject location)
     {
         if (dialogues.Count == 0)
         {
@@ -162,7 +166,7 @@ public class LocationManager : MonoBehaviour
 
     }
 
-    private void advanceDialogue(DialogueText text)
+    public void advanceDialogue(DialogueText text)
     {
         if (!isDialogueOpen)
         {
