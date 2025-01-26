@@ -42,6 +42,11 @@ public class EndingButtons : MonoBehaviour
         }
     }
 
+    public void addButtons() //pop up ending buttons
+    {
+        buttons.SetActive(true);
+    }
+
     public void badOption()
     {
         chosenEnding = badEnding;
