@@ -501,7 +501,7 @@ MonoBehaviour:
         m_MethodName: OnDialogueClickInvest
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: a12bf7b20d589a84dbaa244df215c704, type: 2}
+          m_ObjectArgument: {fileID: 11400000, guid: a41e62eda25940e4fbe9e849f7f5f8e6, type: 2}
           m_ObjectArgumentAssemblyTypeName: DialogueText, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -1163,7 +1163,7 @@ MonoBehaviour:
         m_MethodName: OnDialogueClickInvest
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: a12bf7b20d589a84dbaa244df215c704, type: 2}
+          m_ObjectArgument: {fileID: 11400000, guid: a10ef20e4aecb5f46bbe6ff0ed1938e3, type: 2}
           m_ObjectArgumentAssemblyTypeName: DialogueText, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -1308,7 +1308,7 @@ MonoBehaviour:
         m_MethodName: OnDialogueClickInvest
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: a12bf7b20d589a84dbaa244df215c704, type: 2}
+          m_ObjectArgument: {fileID: 11400000, guid: 01063ebab74be0740ac2daf2be1d24f4, type: 2}
           m_ObjectArgumentAssemblyTypeName: DialogueText, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -1885,7 +1885,7 @@ MonoBehaviour:
   Phone: {fileID: 0}
   Thud1: {fileID: 0}
   Thud2: {fileID: 0}
-  maxVol: 0
+  maxVol: 1
 --- !u!1 &116969436
 GameObject:
   m_ObjectHideFlags: 0
@@ -4344,7 +4344,7 @@ MonoBehaviour:
         m_MethodName: OnDialogueClickInvest
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: a12bf7b20d589a84dbaa244df215c704, type: 2}
+          m_ObjectArgument: {fileID: 11400000, guid: 2c28cc1c32d67b746a8575137d252b69, type: 2}
           m_ObjectArgumentAssemblyTypeName: DialogueText, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -5943,7 +5943,7 @@ MonoBehaviour:
         m_MethodName: OnDialogueClickInvest
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: a12bf7b20d589a84dbaa244df215c704, type: 2}
+          m_ObjectArgument: {fileID: 11400000, guid: d48b22d57ff345d42a4dfba239e497f3, type: 2}
           m_ObjectArgumentAssemblyTypeName: DialogueText, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -6933,7 +6933,7 @@ MonoBehaviour:
         m_MethodName: OnDialogueClickInvest
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: a12bf7b20d589a84dbaa244df215c704, type: 2}
+          m_ObjectArgument: {fileID: 11400000, guid: 9c86af9b9c7a4944f83bb3fddfe1af62, type: 2}
           m_ObjectArgumentAssemblyTypeName: DialogueText, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -7078,7 +7078,7 @@ MonoBehaviour:
         m_MethodName: OnDialogueClickInvest
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: a12bf7b20d589a84dbaa244df215c704, type: 2}
+          m_ObjectArgument: {fileID: 11400000, guid: 90623f92b7df6c046b9f80d53f0b489e, type: 2}
           m_ObjectArgumentAssemblyTypeName: DialogueText, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -13640,7 +13640,7 @@ MonoBehaviour:
         m_MethodName: OnDialogueClickInvest
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: a12bf7b20d589a84dbaa244df215c704, type: 2}
+          m_ObjectArgument: {fileID: 11400000, guid: b632b411ed7132d4cad064d1d79a831d, type: 2}
           m_ObjectArgumentAssemblyTypeName: DialogueText, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -14032,7 +14032,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 81a3575c5cfa85c4392d7a21e4a4ca44, type: 2}
   - {fileID: 11400000, guid: f6bb0565446a16b4f8c6ada27444c268, type: 2}
   - {fileID: 11400000, guid: 5a64a52575ec78743a03f76164a3e7f9, type: 2}
-  - {fileID: 11400000, guid: 50983d1c228472845b33fbf002f27851, type: 2}
   - {fileID: 11400000, guid: f52bb58c752b37c4982233aae2d3795f, type: 2}
   - {fileID: 11400000, guid: 97d054be302b9b041af7b96977b2315e, type: 2}
   - {fileID: 11400000, guid: 85241017c1f449a45982355797b1a4ac, type: 2}
