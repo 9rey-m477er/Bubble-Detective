@@ -96,6 +96,7 @@ public class LocationManager : MonoBehaviour
 
     public void gameStart()
     {
+        //Load Method goes here (see GDD). Replace i = 0 with i = loadLocation
         for (int i = 0; i < locations.Length; i++)
         {
             locationObjects.Enqueue(locations[i]);
